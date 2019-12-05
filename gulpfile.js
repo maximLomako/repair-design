@@ -17,7 +17,7 @@ function bs() {
 };
 
 function serveSass() {
-  return src("./sass/**/*.sass")
+  return src("./sass/**/*.sass", "./sass/**/*.scss")
     .pipe(sass())
     .pipe(dest("./css"))
     .pipe(browserSync.stream());
