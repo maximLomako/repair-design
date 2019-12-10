@@ -329,15 +329,21 @@ template {
     background-color: #E3B873;
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s; }
+    transition: box-shadow 0.3s;
+    padding: 19px 25px; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    width: 30%;
-    height: 10%; }
+    padding: 17px 43px; }
+
+.contacts__button--primary {
+  background-color: #E3B873;
+  color: #fff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  transition: box-shadow 0.3s; }
 
 .container {
   width: 85%;
@@ -377,6 +383,8 @@ body {
   z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
+  .header .container {
+    width: 90%; }
 
 .menu {
   display: flex;
@@ -392,7 +400,7 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.64rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -425,17 +433,16 @@ body {
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
-  .hero__title {
-    margin-bottom: 1rem; }
   .hero__text {
     font-size: 1.57rem;
     background-image: 131%;
     max-width: 504px;
     margin: 0;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    line-height: 1.4; }
   .hero__button {
     margin-right: 20px;
-    padding: 20px 35px; }
+    font-size: 0.95rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -456,7 +463,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-family: Yeseva One;
-    font-size: 0.9rem; }
+    font-size: 0.85rem; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -464,7 +471,7 @@ body {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
 
 .instagram {
   display: flex;
@@ -488,11 +495,11 @@ body {
       margin-left: 8px; }
 
 .title {
-  max-width: 33rem;
-  margin: 0;
+  max-width: 31rem;
+  margin-bottom: 1.4rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.875rem;
+  font-size: 2.7rem;
   line-height: 1.4; }
   .title--primary {
     color: #E3B873; }
