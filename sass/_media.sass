@@ -29,35 +29,102 @@
     &__card
      margin-bottom: 5.7rem
 @media screen and ( max-width: 570px )
+  .container
+    width: 90%
+  .menu__logo
+    font-size: 1.4rem
   .section
     &-title
+      &__image
+        margin-bottom: 2rem
+        &::before, &::after
+          content: ''
+          width: 3.3rem
+          height: 0.2rem
+          background-color: $primary
+          margin: 0 1.3rem
+      &__heading
+        font-size: 2.2rem
       &__description
-        max-width: 21.86rem
+        max-width: 30rem
+        font-size: 1.5rem
+        margin-bottom: 8.5rem
+  .types .section-title__heading
+    font-size: 2.2rem
+  .card
+    &__title
+      margin-top: 0.6rem
+    &__item
+      margin-bottom: 0.07rem
+    &__pricetag
+      padding: 0 2rem
   .contacts
     &__phone
       margin-right: 0
       color: $light
       text-decoration: none
+      font-size: 1.4rem
     &__button
       display: none
   .title
-    font-size: 1.64rem
+    font-size: 1.64rem    
   .hero
+    &__title
+      font-size: 2.55rem
+      max-width: 30rem
+    &__text
+      font-size: 2.01rem
+      max-width: 35.4rem
+      margin-bottom: 3.6rem
     &__scroll-down
       display: none
     &__content
       min-width: 22.86rem
-    &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem
     &__button
+      margin: auto
       display: block
+      padding: 2.16rem 0
+      width: 100%
+      font-size: 1.47rem
       min-width: 22.86rem
-      margin-top: 1.85rem
+      margin-top: 2.48rem
+  .types-title__heading
+    font-size: 10rem
+  .design
+    &__section-title
+      margin-bottom: 4rem
+    &__card
+  .card
+    &__text
+      max-width: 27rem
+      margin-top: -11rem
+    &__title
+      font-size: 1.5rem
+      padding-left: 1.2rem
+      padding-bottom: 0.8rem
+    &__item
+      font-size: 1.3rem
+      padding-left: 1.2rem
+      padding-bottom: 0.5rem
+      &:nth-child(n+8)
+        display: none
+        
+    &__pricetag
+      font-size: 1.5rem
+      padding: 1.2rem 5rem
+    
+
+
+
+
+
+  
+  
 @media screen and ( max-height: 520px)
   .hero
     &__scroll-down
       display: none
+
   
 
 
