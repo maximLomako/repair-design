@@ -356,7 +356,7 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.05rem 0; }
+  padding: 0.6rem 0; }
   .input::placeholder {
     color: #fff; }
 
@@ -660,21 +660,24 @@ img {
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
+    line-height: 1.4;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.94rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.1rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: -0.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem;
-    font-size: 1.1rem; }
+    font-size: 1.15rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    font-size: 1rem;
+    padding: 1.28rem 3.19rem; }
 
 @media screen and (max-width: 1200px) {
   html {
