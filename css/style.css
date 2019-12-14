@@ -378,6 +378,14 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+#toTop {
+  position: fixed;
+  z-index: 9999;
+  height: 50px;
+  width: 50px;
+  bottom: 0;
+  right: 0; }
+
 .container {
   width: 85%;
   max-width: 1256px;
