@@ -439,10 +439,10 @@ img {
       align-items: center; }
       .section-title__word::after {
         content: '';
-        width: 6.42rem;
+        width: 6.5rem;
         height: 0.142rem;
         background-color: #E3B873;
-        margin-left: 2rem; }
+        margin-left: 2.4rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -601,12 +601,13 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 6.4rem; }
   .swiper-slider-image {
     margin-top: -10rem; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
+    margin-bottom: -1.4rem;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
@@ -614,7 +615,12 @@ img {
     font-family: 'Yeseva One', cursive;
     color: #E3B873;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    flex-basis: 50%; }
+  .swiper-slide__value {
+    line-height: 1.4;
+    font-size: 1.1rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -640,6 +646,14 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.section-title__projects {
+  margin-top: 2rem; }
+
+.desktop-order-top {
+  margin-top: -4.3rem;
+  max-width: 49.57rem;
+  max-height: 34.42rem; }
 
 .types__section-title {
   margin-bottom: 2.3rem; }
@@ -697,6 +711,9 @@ img {
 
 .section-title__heading {
   font-size: 2.15rem; }
+  .section-title__heading--primary {
+    font-size: 1.75rem;
+    line-height: 1.4; }
 
 .section-title__description {
   max-width: 60.6rem;
@@ -877,8 +894,29 @@ img {
     display: flex;
     flex-wrap: wrap; }
     .swiper-slider-image {
-      margin-top: 0; }
+      margin-top: 2.3rem; }
   .mobile-order-top {
     order: -1; }
   .col-50 {
-    width: 100%; } }
+    width: 100%; }
+  .section-title {
+    width: 90%; }
+    .section-title__projects {
+      text-align: center;
+      font-size: 1.16rem;
+      max-width: 305px; }
+    .section-title__word {
+      margin-left: 10rem; }
+      .section-title__word::after {
+        display: none; }
+    .section-title__heading--primary {
+      text-align: center;
+      font-size: 1.63rem;
+      line-height: 1.5; }
+  .swiper-container {
+    margin-top: -5.5rem; }
+  .swiper-slide__heading {
+    font-size: 1.16rem;
+    margin-bottom: 0.9rem; }
+  .swiper-wrapper-bottom {
+    margin-bottom: -2.5rem; } }
