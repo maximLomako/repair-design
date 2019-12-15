@@ -111,20 +111,23 @@
         
     &__pricetag
       font-size: 1.5rem
-      padding: 1.2rem 5rem
-    
-
-
-
-
-
-  
-  
+      padding: 1.2rem 5rem  
 @media screen and ( max-height: 520px)
   .hero
     &__scroll-down
       display: none
-
+@media screen and ( max-width: 375px )
+  .swiper
+    &-slider
+      display: flex 
+      flex-wrap: wrap
+      &-image
+        margin-top: 0
+  .mobile-order-top
+    order: -1
+  .col-50
+    width: 100%
+  
   
 
 
