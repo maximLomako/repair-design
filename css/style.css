@@ -545,7 +545,7 @@ img {
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
-    z-index: 999;
+    z-index: 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -655,10 +655,13 @@ img {
   max-width: 49.57rem;
   max-height: 34.42rem; }
 
+.control__heading {
+  font-size: 1.45rem; }
+
 .types__section-title {
   margin-bottom: 2.3rem; }
 
-.types .section-title__heading {
+.types-title__heading {
   font-size: 1.4rem; }
 
 .card__image {
@@ -700,6 +703,12 @@ img {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
+.design-title__description {
+  font-size: 1.42rem; }
+
+.design__heading {
+  font-size: 1.45rem; }
+
 .design__section-title {
   margin-bottom: 2.78rem; }
   .design__section-title__description {
@@ -709,17 +718,14 @@ img {
   padding: 1.2rem 4.1rem;
   font-size: 1.2rem; }
 
-.section-title__heading {
-  font-size: 2.15rem; }
-  .section-title__heading--primary {
-    font-size: 1.75rem;
-    line-height: 1.4; }
+.section-title__heading--primary {
+  font-size: 1.75rem;
+  line-height: 1.4; }
 
 .section-title__description {
-  max-width: 60.6rem;
+  max-width: 52.6rem;
   margin-top: 1rem;
-  margin-bottom: 3.3rem;
-  font-size: 1.7rem; }
+  margin-bottom: 3.3rem; }
 
 .section .card__text {
   padding-top: 1.7rem; }
@@ -824,12 +830,6 @@ img {
       margin: 0 1.3rem; }
   .section-title__heading {
     font-size: 2.2rem; }
-  .section-title__description {
-    max-width: 30rem;
-    font-size: 1.5rem;
-    margin-bottom: 8.5rem; }
-  .types .section-title__heading {
-    font-size: 2.2rem; }
   .card__title {
     margin-top: 0.6rem; }
   .card__item {
@@ -890,6 +890,66 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .menu__logo {
+    font-size: 1rem; }
+  .contacts__phone {
+    font-size: 1rem; }
+  .hero__title {
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.9rem; }
+  .hero__text {
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 26.5rem;
+    margin-bottom: 2rem; }
+  .hero__button {
+    font-size: 1.1rem;
+    padding: 1.3rem 1rem;
+    margin-bottom: 1rem; }
+  .types-title__heading {
+    font-size: 1.8rem; }
+  .types__image::before, .types__image::after {
+    margin: auto 1rem;
+    width: 2.6rem; }
+  .card {
+    margin-bottom: 6.5rem; }
+    .card__list__design {
+      margin-bottom: 1.55rem; }
+    .card__text {
+      margin-top: -11.5rem;
+      max-width: 22.3rem;
+      max-height: 20rem; }
+      .card__text__design {
+        padding-bottom: 5rem; }
+    .card__title {
+      margin: 0;
+      margin-left: -1rem;
+      font-size: 1.25rem; }
+    .card__item {
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 0; }
+    .card__pricetag {
+      font-size: 1.2rem;
+      padding: 1rem 2.9rem; }
+  .design__pricetag {
+    padding: 1rem 4.2rem; }
+  .design__section-title {
+    margin: auto; }
+  .design-title__description {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 3rem; }
+  .design__heading {
+    font-size: 1.85rem;
+    margin: 0;
+    margin-bottom: 1rem; }
+  .design__image::before, .design__image::after {
+    margin: auto 1rem;
+    width: 2.6rem; }
+  .col-30__design {
+    margin-bottom: 0.7rem; }
   .swiper-slider {
     display: flex;
     flex-wrap: wrap; }
