@@ -337,7 +337,8 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
-    padding: 17px 43px; }
+    padding: 17px 45px;
+    font-size: 2rem; }
 
 .contacts__button--primary {
   background-color: #E3B873;
@@ -715,8 +716,10 @@ img {
     max-width: 740px; }
 
 .design__pricetag {
-  padding: 1.2rem 4.1rem;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  padding-top: 1.214rem;
+  padding-bottom: 1.214rem;
+  padding-right: 6rem; }
 
 .section-title__heading--primary {
   font-size: 1.75rem;
@@ -729,6 +732,9 @@ img {
 
 .section .card__text {
   padding-top: 1.7rem; }
+
+.section .card__list__design {
+  margin-bottom: 2.19rem; }
 
 .modal {
   opacity: 0;
@@ -890,12 +896,17 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
-  .menu__logo {
-    font-size: 1rem; }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 20px; }
+  .menu {
+    margin-bottom: 0; }
+    .menu__logo {
+      font-size: 1.07rem; }
   .contacts__phone {
     font-size: 1rem; }
   .hero__title {
-    margin-top: -0.6rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.9rem; }
   .hero__text {
@@ -924,17 +935,19 @@ img {
         padding-bottom: 5rem; }
     .card__title {
       margin: 0;
-      margin-left: -1rem;
+      margin-left: -0.8rem;
       font-size: 1.25rem; }
     .card__item {
       font-size: 1.1rem;
-      margin: 0;
+      margin-bottom: 0.1rem;
+      margin-left: 0.1rem;
       padding: 0; }
     .card__pricetag {
       font-size: 1.2rem;
       padding: 1rem 2.9rem; }
   .design__pricetag {
-    padding: 1rem 4.2rem; }
+    padding: 1rem 3.6rem;
+    font-size: 1.3rem; }
   .design__section-title {
     margin: auto; }
   .design-title__description {
