@@ -659,71 +659,67 @@ img {
   max-width: 49.57rem;
   max-height: 34.42rem; }
 
-.control__section-title {
-  margin-bottom: 2.214rem;
-  margin-top: -30rem; }
-
-.control__heading {
-  font-size: 1.45rem;
-  color: #fff; }
-
-.control__video {
-  position: relative;
-  display: flex;
-  margin: auto;
-  margin-bottom: 4.428rem;
-  max-width: 58.357rem;
-  min-height: 31rem;
-  background: #131313 url("../img/video-mask.jpg") center no-repeat;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
-  .control__video::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 19, 19, 0.8); }
-
-.control__text {
-  margin: auto;
-  margin-bottom: 4.285rem;
-  text-align: center;
-  max-width: 40.785rem;
-  font-size: 1.428rem;
-  line-height: 2.42rem;
-  color: #131313; }
-  .control__text::before {
-    display: block;
+.control {
+  padding: 69px 0; }
+  .control__section-title {
+    margin-bottom: 2.214rem;
+    margin-top: -30rem; }
+  .control__heading {
+    font-size: 1.45rem;
+    color: #fff;
+    margin-bottom: 0.9rem; }
+  .control__video {
+    position: relative;
+    display: flex;
     margin: auto;
-    margin-bottom: 2.5rem;
-    content: '';
-    width: 55px;
-    height: 2px;
-    background-color: #E3B873;
-    border-radius: 30px; }
-
-.control__form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 55rem;
-  margin: auto; }
-
-.control__input-group {
-  display: flex;
-  flex-basis: 30%;
-  flex-direction: column; }
-
-.control__policy {
-  flex-basis: 100%;
-  margin-top: 1rem; }
-  .control__policy-label {
-    justify-content: center; }
-
-.control__label {
-  margin-bottom: -7px; }
-
-.control__button {
-  padding: 1.2857rem 4.7857rem; }
+    margin-bottom: 4.428rem;
+    max-width: 58.357rem;
+    min-height: 31rem;
+    background: #131313 url("../img/video-mask.jpg") center no-repeat;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+    .control__video::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 19, 19, 0.8); }
+  .control__text {
+    margin: auto;
+    margin-bottom: 4.285rem;
+    text-align: center;
+    max-width: 40rem;
+    font-size: 1.428rem;
+    line-height: 2.42rem;
+    color: #131313; }
+    .control__text::before {
+      display: block;
+      margin: auto;
+      margin-bottom: 2.1rem;
+      content: '';
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
+  .control__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    margin: auto; }
+  .control__input-group {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column; }
+  .control__policy {
+    flex-basis: 100%;
+    margin-top: 1.35rem; }
+    .control__policy-label {
+      justify-content: center; }
+  .control__label {
+    margin-bottom: -7px; }
+  .control__button {
+    padding: 0.9rem 4.35rem;
+    font-size: 1.1rem; }
 
 .video__play {
   position: relative;
@@ -1033,6 +1029,48 @@ img {
     width: 2.6rem; }
   .col-30__design {
     margin-bottom: 0.7rem; }
+  .control {
+    padding-bottom: 2.9rem;
+    background-color: #131313; }
+    .control__heading {
+      font-size: 1.85rem;
+      margin-bottom: 1.3rem; }
+    .control-title__image::before, .control-title__image::after {
+      margin: auto 1rem;
+      width: 2.6rem; }
+    .control__video {
+      max-height: 31rem;
+      margin-bottom: 2.428rem; }
+    .control__text {
+      font-size: 1.15rem;
+      line-height: 2rem;
+      margin-bottom: 2.5rem;
+      color: #fff; }
+      .control__text::before {
+        margin-bottom: 1.45rem; }
+    .control__form {
+      display: flex;
+      flex-direction: column; }
+    .control__input-group {
+      margin-bottom: 5.4rem; }
+    .control__label {
+      font-size: 1.21rem;
+      color: rgba(255, 255, 255, 0.5); }
+    .control__input {
+      font-size: 1.5rem; }
+      .control__input::placeholder {
+        color: #fff; }
+    .control__button {
+      order: 1;
+      margin-bottom: -5rem;
+      font-size: 1.3rem;
+      padding: 1.4rem 4.35rem; }
+    .control__policy {
+      font-size: 1.34rem;
+      margin-top: -4.5rem;
+      margin-bottom: 4.9rem;
+      margin-left: -5.9rem;
+      color: #fff; }
   .swiper-slider {
     display: flex;
     flex-wrap: wrap; }
