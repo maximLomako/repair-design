@@ -369,7 +369,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -378,6 +379,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 #toTop {
   position: fixed;
@@ -801,6 +804,54 @@ img {
 
 .section .card__list__design {
   margin-bottom: 2.19rem; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    margin: auto;
+    margin-bottom: 3.714rem;
+    background-color: #181818;
+    max-width: 63.07rem;
+    min-height: 31.78rem;
+    padding: 2.5rem; }
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 3.214rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.428rem;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal; }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 37.142rem; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+    .footer__input--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2 rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    font-size: 1.1rem;
+    padding: 1.214rem 4.357rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
