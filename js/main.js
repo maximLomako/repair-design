@@ -79,6 +79,8 @@ $(document).ready(function () {
   
   //slider-end
 
+  new WOW().init();
+
 
   modal.on('click', (event) => {
     modal.toggleClass('modal--visible')})

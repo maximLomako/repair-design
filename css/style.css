@@ -1040,7 +1040,7 @@ img {
       width: 2.6rem; }
     .control__video {
       background: #131313 url("../img/video-mask__mobile.jpg") center no-repeat;
-      max-height: 31rem;
+      min-height: 18.7rem;
       margin-bottom: 2.428rem; }
       .control__video::before {
         position: absolute;
