@@ -46,7 +46,13 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalDialog = $('.modal__dialog'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+      closeBtn = $('.modal__close'),
+      submitBtn = $('#submit-form');
+  submitBtn.on('click', function () {
+    $('.modal__form').submit()
+  })
+  
+
   modalDialog.on('click', modalClick)
    modalBtn.on('click', function () {
       modal.toggleClass('modal--visible')
@@ -171,12 +177,43 @@ $(document).ready(function () {
     }
   });
 
-  
-
-
   // Маска для номера телефона
   $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7(___) __-__-___" });
+  //Карта
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [55.751574, 37.573856],
+        zoom: 9
+      }, {
+        searchControlProvider: 'yandex#search'
+        
+      }),
 
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Наш офис',
+        balloonContent: 'Вход со двора'
+      }, {
+        
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/location.png',
+        // Размеры метки.
+        iconImageSize: [50, 50],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+    myMap.geoObjects
+      .add(myPlacemark)
+  });
+
+  
 
   modal.on('click', (event) => {
     modal.toggleClass('modal--visible')})

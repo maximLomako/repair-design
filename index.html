@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/style.css">
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU" type="text/javascript">
+    </script>
    <title>Document</title>
  </head>
  <body>
@@ -501,10 +503,23 @@
           <!-- /.form footer__form -->
         </div>
         <!-- /.fppter-wrap -->
-        <div class="map footer__map">
-          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae923bfc2a300bd5b72140ea42e2a34dc85f73cda0868c72f2b34591b7f7ac549&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="footer__content">
+          <div class="footer__description">
+            <h3 class="footer__text">
+              <strong class="footer__contatcs">Ростов на дону, Торговый центр Plaza
+                Прямой телефон +7 (999) 768 32 99</strong>
+            </h3>
+            <!-- /.footer__text -->
+            <div class="footer__icons">
+              <div class="footer__icon"><img src="./img/footer/footer_message.svg" alt="footer__icon"></div>
+              <div class="footer__icon"><img src="./img/footer/footer_instagram.svg" alt="footer__icon"></div>
+            </div>
+            <!-- /.footer_icons -->
+          </div>
+          <div class="map footer__map" id="map">
+          </div>
         </div>
+        
         </div>
       </div>
       <!-- /.container -->
@@ -559,7 +574,7 @@
              <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
            </div>
            <!-- /.policy -->
-           <button class="button button--primary modal__button">Отправить заявку</button>
+           <button class="button button--primary modal__button" id="submit-form">Отправить заявку</button>
             <!-- /.button button--primary modal__button -->
          </form>
          <!-- /.form modal__form -->
