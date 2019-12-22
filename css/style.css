@@ -383,11 +383,12 @@ template {
     justify-content: center; }
 
 div.invalid {
-  margin-top: 1rem;
+  margin-top: 0rem;
   color: tomato; }
 
 div.invalid {
-  border-bottom: 1px solid tomato; }
+  border-top: 1px solid tomato;
+  padding-top: 1rem; }
 
 #toTop {
   position: fixed;

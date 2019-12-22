@@ -160,6 +160,7 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhone: "required",
+      userQustion: "required",
       // правило-объект
       userEmail: {
         required: true,
@@ -173,6 +174,7 @@ $(document).ready(function () {
         maxlength: "Имя не должно быть длиннее 15 символов"
 
       },
+      userQustion: "Заполните поле",
       userPhone: "Заполните поле",
     }
   });
