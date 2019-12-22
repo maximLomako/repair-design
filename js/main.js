@@ -42,6 +42,7 @@ $(document).ready(function () {
     e.stopImmediatePropagation();
     return false;
   }
+
   var modal = $('.modal'),
       modalDialog = $('.modal__dialog'),
       modalBtn = $('[data-toggle=modal]'),
@@ -81,7 +82,7 @@ $(document).ready(function () {
 
   new WOW().init();
   
-  //Валидация формы
+  //Валидация формы modal
   $('.modal__form').validate({
     errorClass: "invalid",
     errorElement: "div",
@@ -90,6 +91,7 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
+        maxlength: 15
       },
       userPhone: "required",
       // правило-объект
@@ -101,7 +103,8 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Заполните поле",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не должно быть длиннее 15 символов"
 
       },
       userPhone: "Заполните поле",
@@ -111,6 +114,66 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не должно быть длиннее 15 символов"
+
+      },
+      userPhone: "Заполните поле",
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не должно быть длиннее 15 символов"
+
+      },
+      userPhone: "Заполните поле",
+    }
+  });
+
+  
+
+
   // Маска для номера телефона
   $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7(___) __-__-___" });
 

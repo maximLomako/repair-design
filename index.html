@@ -193,12 +193,12 @@
           <form action="#" class="form control__form">
             <div class=" control__input-group">
               <label for="user-name" class="label form__label control__label">Имя</label>
-              <input type="text" autocomplete="off" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+              <input type="text" name="userName" name autocomplete="off" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
             </div>
             <!-- /.label form__label -->
             <div class=" control__input-group">
               <label for="user-phone" class="label form__label control__label">Телефон</label>
-              <input type="tel" autocomplete="off" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+              <input type="tel" name="userPhone" name autocomplete="off" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
             </div>
 
             <button class="button button--primary control__button">Отправить</button>
@@ -391,7 +391,7 @@
             <!-- /.section-title__description -->
           </div>
           <div class="row">
-            <div class="col-30">
+            <div class="col-30 team__cards">
               <div class="card-team">
                 <div class="team__icon">
                   <img src="img/team/team-idea.svg" alt="team-icon" class="card-team__icon">
@@ -411,7 +411,7 @@
               <!-- /.card-team -->
             </div>
             <!-- /.col-30 -->
-            <div class="col-30">
+            <div class="col-30 team__cards">
               <div class="card-team">
                 <div class="team__icon">
                   <img src="img/team/team-design.svg" alt="team-icon" class="card-team__icon">
@@ -431,7 +431,7 @@
               <!-- /.card-team -->
             </div>
             <!-- /.col-30 -->
-            <div class="col-30">
+            <div class="col-30 team__cards">
               <div class="card-team">
                 <div class="team__icon">
                   <img src="img/team/team-portfolio.svg" alt="team-icon" class="card-team__icon">
@@ -466,19 +466,19 @@
 
     </main>
     <footer class="footer section--dark">
-      <div class="container">
+      <div class="container container--dark">
         <div class="footer__wrap">
           <h3 class="footer__title">Остались вопросы?</h3>
           <form action="#" class="form footer__form">
 
             <div class="input-group footer__input-group">
               <label for="user-name" class="label label--light form__label">Имя</label>
-          <input type="text" autocomplete="off" class="input form__input footer__input input--light " id="user-name" placeholder="Как вас зовут:">
+          <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light " id="user-name" placeholder="Как вас зовут:">
             </div>
             
             <div class="input-group footer__input-group">
               <label for="user-phone" class="label label--light form__label">Телефон</label>
-              <input type="tel" autocomplete="off" class="input form__input footer__input input--light " id="user-phone"
+              <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light " id="user-phone"
                 placeholder="Ваш номер телефона:">
               <!-- /.label form__label -->
             </div>
@@ -501,7 +501,10 @@
           <!-- /.form footer__form -->
         </div>
         <!-- /.fppter-wrap -->
-
+        <div class="map footer__map">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae923bfc2a300bd5b72140ea42e2a34dc85f73cda0868c72f2b34591b7f7ac549&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
         </div>
       </div>
       <!-- /.container -->

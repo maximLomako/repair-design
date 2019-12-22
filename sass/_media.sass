@@ -23,6 +23,7 @@
     &__text
       margin-left: 0
   .design
+    padding-bottom: 0
     background-color: $dark
     &__section-title
       color: $light
@@ -108,10 +109,12 @@
       font-size: 1.5rem
       padding: 1.2rem 5rem  
 @media screen and ( max-height: 520px)
-  .hero
+  
     &__scroll-down
       display: none
 @media screen and ( max-width: 375px )
+  body
+    background-color: $dark
   .header
     padding-top: 16px
     padding-bottom: 20px
@@ -123,6 +126,7 @@
     &__phone
       font-size: 1rem
   .hero
+    height: 70vh
     &__title
       margin-top: 1rem
       margin-bottom: 1rem
@@ -137,6 +141,7 @@
       padding: 1.3rem 1rem
       margin-bottom: 1rem
   .types
+    background-color: $light
     &-title
       &__heading
         font-size: 1.8rem
@@ -156,7 +161,7 @@
       &__design
         padding-bottom: 5rem
     &__title
-      margin: 0
+      margin: auto
       margin-left: -0.8rem
       font-size: 1.25rem
     &__item
@@ -191,6 +196,7 @@
     &__design
       margin-bottom: 0.7rem
   .control
+    padding-top: 35rem
     padding-bottom: 2.9rem
     background-color: $dark
     &__heading
@@ -243,8 +249,41 @@
       color: $light
   .video__play
     max-width: 5rem
-  
-        
+  .team
+    padding-top: 0
+    background-color: $dark
+    &__section-title
+      margin: auto
+      width: 100% !important
+    &-title__heading
+      font-size: 1.8rem
+    &__image
+      &::before, &::after
+        margin: auto 1rem
+        width: 2.6rem
+    &-title
+      &__description
+        font-size: 1.25rem
+        margin-bottom: 8rem
+    &__cards
+      margin-bottom: 6rem
+    &__icon
+      top: -14%
+      left: -14%
+    &__text
+      display: none
+  .section
+    &--dark
+      width: 100%
+      padding: 0
+  .container--dark
+    width: 100%
+  .footer
+    &__wrap
+      margin-bottom: 0
+      padding-bottom: 3.7rem
+
+
         
           
   .swiper
@@ -275,12 +314,12 @@
           line-height: 1.5
   .swiper
     &-container
-      margin-top: -5.5rem
+      margin-top: 6rem
     &-slide__heading
       font-size: 1.16rem
       margin-bottom: 0.9rem
   .swiper-wrapper-bottom
-    margin-bottom: -2.5rem
+    margin-bottom: 0.5rem
 
 
 
