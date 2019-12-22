@@ -382,6 +382,13 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+div.invalid {
+  margin-top: 1rem;
+  color: tomato; }
+
+div.invalid {
+  border-bottom: 1px solid tomato; }
+
 #toTop {
   position: fixed;
   z-index: 9999;
@@ -1004,10 +1011,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.1rem; }
-    .modal__input:last-of-type {
-      margin-bottom: -0.3rem; }
+  .modal__input:last-of-type {
+    margin-bottom: -0.3rem; }
   .modal__policy {
     margin-bottom: 2.7rem;
     font-size: 1.15rem; }

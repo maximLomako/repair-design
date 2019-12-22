@@ -80,6 +80,39 @@ $(document).ready(function () {
   //slider-end
 
   new WOW().init();
+  
+  //Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+      },
+      userPhone: "required",
+      // правило-объект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв"
+
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      }
+    }
+  });
+  // Маска для номера телефона
+  $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7(___) __-__-___" });
 
 
   modal.on('click', (event) => {
