@@ -75,7 +75,7 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev',
     },
   })
- 
+ console.log(mySwiper);
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
@@ -83,9 +83,27 @@ $(document).ready(function () {
 
   next.css('left', prev.width() + 10 + bullets.width()+ 10)
   bullets.css('left', prev.width() + 10)
-  
   //slider-end
 
+  // переключение слайдов по табам из секции 6 
+
+  $('.goals__tabs-item').on('click', function () {
+    $('.goals__tabs-item').removeClass('active');
+    $(this).addClass('active');
+    const e = $(this).data('index');
+    mySwiper.slideTo(e);
+  })
+  console.log(mySwiper);
+
+  mySwiper.on('slideChange',  ()=> {
+    let e = mySwiper.activeIndex - 1;
+    if (e === 6) {
+      e = 0
+    };
+    $('.goals__tabs-item').removeClass('active');
+    $('.goals__tabs-item').eq(e).addClass('active');
+  })
+  
   new WOW().init();
   
   //Валидация формы modal
@@ -118,6 +136,18 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email",
       }
+      
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал'+response);
+          
+        }
+      });
     }
   });
 

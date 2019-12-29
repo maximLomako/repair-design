@@ -393,10 +393,19 @@ div.invalid {
 #toTop {
   position: fixed;
   z-index: 9999;
-  height: 50px;
-  width: 50px;
-  bottom: 0;
-  right: 0; }
+  bottom: 55px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #E3B873;
+  font-size: 1.5rem;
+  font-family: 'Yeseva One', cursive;
+  transition: 0.3s; }
+  #toTop:focus {
+    outline: none; }
+  #toTop:hover {
+    color: rgba(227, 184, 115, 0.5); }
 
 .container {
   width: 85%;
@@ -411,8 +420,14 @@ div.invalid {
 .col-30 {
   flex-basis: 30%; }
 
+.col-40 {
+  width: 40%; }
+
 .col-50 {
   width: 50%; }
+
+.col-60 {
+  width: 60%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -819,6 +834,68 @@ img {
 
 .section .card__list__design {
   margin-bottom: 2.19rem; }
+
+.section-title__preheading {
+  font-family: 'Futura Book', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.07rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #fff; }
+
+.swiper-slide__heading {
+  max-width: 18.7rem; }
+
+.swiper-slide__picture {
+  max-width: 805px;
+  max-height: 421px; }
+
+.swiper-slide__number {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  text-transform: uppercase;
+  color: #fff; }
+
+.swiper-slide__value {
+  width: 24.07rem; }
+
+.goals__tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 58.5rem;
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 0; }
+  .goals__tabs-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 33.3%;
+    margin-bottom: 3rem; }
+  .goals__tabs-number {
+    max-width: 1.1rem;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid #E3B873;
+    margin-bottom: 1rem; }
+
+.goals-text {
+  font-family: 'Futura book', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.285rem;
+  color: #fff; }
 
 .team {
   margin: auto;
