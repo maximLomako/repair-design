@@ -1,4 +1,5 @@
 <?php
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
   
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
@@ -37,7 +38,7 @@ try {
  
 
     $mail->send();
-    header('Location: thanks.html');
+   // header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

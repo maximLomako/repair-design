@@ -181,6 +181,24 @@ $(document).ready(function () {
 
   // Маска для номера телефона
   $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7(___) __-__-___" });
+  
+  $('#modal-form').on('submit', function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $(this).serialize(),
+      success: function (response) {
+        console.log('Прибыли данные: ' + response);
+        $('#modal-form')[0].reset();
+      },
+      error: function (jqXNR, textStatus, errorThrown) {
+        console.error(jqXNR + " " + textStatus);
+      }
+    });
+  });
+
+   
   //Карта
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
@@ -239,6 +257,8 @@ $(document).keydown(function (e) {
       modal = $('.modal');
   if (code == 27) modal.toggleClass('modal--visible')
 });
+
+
 
 
 
