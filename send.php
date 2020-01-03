@@ -1,5 +1,6 @@
 <?php
-$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+error_reporting(-1);
+header('Content-Type: text/html; charset=utf-8');
   
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];

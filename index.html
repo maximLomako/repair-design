@@ -8,8 +8,7 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/style.css">
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU" type="text/javascript">
-    </script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU" type="text/javascript"></script>
    <title>Repair Design Project</title>
  </head>
  <body>
@@ -58,7 +57,8 @@
       <section class="section section--dark projects">
         <div class="container">
           <div class="section-title section-title--left">
-            <h2 class="section-title__heading  section-title__heading--primary wow fadeInDown">Завершенные
+            <h2 class="section-title__heading section-title__heading--media576 section-title__heading--primary wow fadeInDown">
+              Завершенные
               <span class="section-title__word">проекты</span></h2>
             <p class="section-title__text section-title__projects wow fadeInDown">На сайте представлена ​​лишь небольшая часть работ,
               выполняемых нашей компанией. За 14
@@ -194,20 +194,20 @@
           заявку ниже чтобы получить ссылку на трансляцию.</p>
           <form action="send.php" class="form control__form">
             <div class=" control__input-group">
-              <label for="user-name" class="label form__label control__label">Имя</label>
-              <input type="text" name="userName" name autocomplete="off" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+              <label for="user-name__control" class="label form__label control__label">Имя</label>
+              <input type="text" name="userName" autocomplete="off" class="input form__input control__input" id="user-name__control" placeholder="Как вас зовут:">
             </div>
             <!-- /.label form__label -->
             <div class=" control__input-group">
-              <label for="user-phone" class="label form__label control__label">Телефон</label>
-              <input type="tel" name="userPhone" name autocomplete="off" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+              <label for="user-phone__control" class="label form__label control__label">Телефон</label>
+              <input type="tel" name="userPhone" autocomplete="off" class="input form__input control__input" id="user-phone__control" placeholder="Ваш номер телефона:">
             </div>
 
             <button class="button button--primary control__button">Отправить</button>
             <!-- /.button button--primary control__button -->
             <div class="policy control__policy">
-              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-              <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+              <input type="checkbox" name="policy-checkbox__control" id="policy-checkbox__control" class="policy__checkbox">
+              <label for="policy-checkbox__control" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
             </div>
             <!-- /.policy -->
           </form>
@@ -381,7 +381,7 @@
       </section>
       <!-- /.section design -->
 
-      <section class="section section--dark goals">
+      <section class="section section--dark goals goals--margin">
         <div class="container">
           <div class="row">
             <div class="col-40">
@@ -529,6 +529,7 @@
           <!-- /.row -->
         </div>
         <!-- /.container -->
+        </div>
       </section>
       
       
@@ -729,13 +730,13 @@
           <form action="send.php" class="form footer__form">
 
             <div class="input-group footer__input-group">
-              <label for="user-name" class="label label--light form__label">Имя</label>
-          <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light " id="user-name" placeholder="Как вас зовут:">
+              <label for="user-name__footer" class="label label--light form__label">Имя</label>
+          <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light " id="user-name__footer" placeholder="Как вас зовут:">
             </div>
             
             <div class="input-group footer__input-group">
-              <label for="user-phone" class="label label--light form__label">Телефон</label>
-              <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light " id="user-phone"
+              <label for="user-phone__footer" class="label label--light form__label">Телефон</label>
+              <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light " id="user-phone__footer"
                 placeholder="Ваш номер телефона:">
               <!-- /.label form__label -->
             </div>
@@ -748,8 +749,8 @@
             </div>
             
             <div class="policy footer__policy">
-              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-              <label for="policy-checkbox" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
+              <input type="checkbox" name="policy-checkbox__footer" id="policy-checkbox__footer" class="policy__checkbox" checked>
+              <label for="policy-checkbox__footer" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
             </div>
               <!-- /.policy -->
             <button class="button button--primary footer__button">Отправить</button>
@@ -776,7 +777,6 @@
         </div>
         
         </div>
-      </div>
       <!-- /.container -->
       <div class="footer__menu"> 
         <div class="container">
@@ -806,14 +806,14 @@
         <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
          <form action="send.php" method="POST" id="modal-form" class="form modal__form">
            <div class="input-group modal__input-group">
-            <label for="user-name" class="label label--light form__label">Имя</label>
-            <input type="text" autocomplete="off" name="userName" class="input form__input modal__input input--light " id="user-name"
+            <label for="user-name__modal" class="label label--light form__label">Имя</label>
+            <input type="text" autocomplete="off" name="userName" class="input form__input modal__input input--light " id="user-name__modal"
               placeholder="Как вас зовут:">
             <!-- /.label form__label -->
            </div>
            <div class="input-group modal__input-group">
-            <label for="user-phone" class="label label--light form__label">Телефон</label>
-            <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input input--light " id="user-phone"
+            <label for="user-phone__modal" class="label label--light form__label">Телефон</label>
+            <input type="tel" autocomplete="off" name="userPhone" class="input form__input modal__input input--light " id="user-phone__modal"
               placeholder="Ваш номер телефона:">
             <!-- /.label form__label -->
            </div>
@@ -825,8 +825,8 @@
            </div>
          
            <div class="policy modal__policy">
-             <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-             <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+             <input type="checkbox" name="policy-checkbox__modal" id="policy-checkbox__modal" class="policy__checkbox" checked>
+             <label for="policy-checkbox__modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
            </div>
            <!-- /.policy -->
            <button class="button button--primary modal__button" id="submit-form">Отправить заявку</button>
@@ -839,6 +839,7 @@
     </div>
     <!-- /.modal -->
     <button id="toTop">Вверх</button>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
