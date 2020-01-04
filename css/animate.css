@@ -107,10 +107,6 @@
   }
 }
 
-.flash {
-  -webkit-animation-name: flash;
-  animation-name: flash;
-}
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 

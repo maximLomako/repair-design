@@ -35,6 +35,8 @@
   });
   });
 */
+let check_if_load = false;
+
 $(document).ready(function () {
   const modalClick = (e) => {
     e.preventDefault();
@@ -43,11 +45,47 @@ $(document).ready(function () {
     return false;
   }
 
+  $('#map').mouseenter(function () {
+    if (!check_if_load) {
+      check_if_load = true;
+        var myMap = new ymaps.Map('map', {
+            center: [55.751574, 37.573856],
+            zoom: 9
+          }, {
+            searchControlProvider: 'yandex#search'
+
+          }),
+
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+
+          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Наш офис',
+            balloonContent: 'Вход со двора'
+          }, {
+
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/location.png',
+            // Размеры метки.
+            iconImageSize: [50, 50],
+
+            iconImageOffset: [-5, -38]
+          });
+        myMap.geoObjects
+          .add(myPlacemark)
+      ;
+    }
+  });
+
   var modal = $('.modal'),
-      modalDialog = $('.modal__dialog'),
-      modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close'),
-      submitBtn = $('#submit-form');
+    modalDialog = $('.modal__dialog'),
+    modalBtn = $('[data-toggle=modal]'),
+    closeBtn = $('.modal__close'),
+    submitBtn = $('#submit-form');
   submitBtn.on('click', function () {
     $('.modal__form').submit()
   })
@@ -63,7 +101,7 @@ $(document).ready(function () {
 
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
     pagination: {
@@ -80,7 +118,7 @@ $(document).ready(function () {
   var bullets = $('.swiper-pagination');
 
 
-  next.css('left', prev.width() + 10 + bullets.width()+ 10)
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
   bullets.css('left', prev.width() + 10)
   //slider-end
 
@@ -94,7 +132,7 @@ $(document).ready(function () {
     mySwiper[3].slideTo(e);
   })
 
-  mySwiper[2].on('slideChange',  ()=> {
+  mySwiper[2].on('slideChange', () => {
     let e = mySwiper[2].activeIndex - 1;
     if (e === 6) {
       e = 0
@@ -171,45 +209,16 @@ $(document).ready(function () {
 
 
 
-  //Карта
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-      center: [55.751574, 37.573856],
-      zoom: 9
-    }, {
-      searchControlProvider: 'yandex#search'
-
-    }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Наш офис',
-          balloonContent: 'Вход со двора'
-        }, {
-
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: 'img/location.png',
-          // Размеры метки.
-          iconImageSize: [50, 50],
-          
-          iconImageOffset: [-5, -38]
-        });
-    myMap.geoObjects
-      .add(myPlacemark)
-  });
 
 
 
   modal.on('click', (event) => {
-    modal.toggleClass('modal--visible')})
+    modal.toggleClass('modal--visible')
+  })
   $("#toTop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1000);
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000);
 
   });
 
@@ -225,6 +234,28 @@ $(document).ready(function () {
 
 $(document).keydown(function (e) {
   var code = e.keyCode || e.which,
-      modal = $('.modal');
+    modal = $('.modal');
   if (code == 27) modal.toggleClass('modal--visible')
 });
+
+
+function loadScript(url, callback) {
+  var script = document.createElement("script");
+
+  if (script.readyState) { // IE
+    script.onreadystatechange = function () {
+      if (script.readyState == "loaded" ||
+        script.readyState == "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else { // Другие браузеры
+    script.onload = function () {
+      callback();
+    };
+  }
+
+  script.src = url;
+  document.getElementsByTagName("head")[0].appendChild(script);
+}
