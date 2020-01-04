@@ -4,15 +4,65 @@
   .nav
     &__item
       margin-right: 1rem
-@media screen and ( max-width: 992px )
+@media screen and ( min-width: 1201px )
+  .section-title__word
+    justify-content: left!important
+  .section-title__projects
+    text-align: left
+    margin-left: 0 !important
+    max-width: 27.07rem !important
+  .control
+    margin-top: -25rem
+  .control-title__image
+    margin: 2rem auto
+  
+@media screen and ( min-width: 992px ) and (max-width: 1200px)
+  .nav
+    display: visible
+  .hero
+    &__instagram
+      display: visible
+    &__content
+      margin-left: 2rem
+  .goals__tabs
+    max-width: 48rem
+  .section-title__word--media992
+    justify-content: left!important
+  .section-title__projects
+    text-align: left
+    margin-left: 0 !important
+    max-width: 27.07rem !important
+  .control
+    margin-top: -25rem
+    &-title__image
+      margin: 2rem auto
+  .types__image
+    margin: 2rem auto
+  .card
+    &__text
+      max-width: 17rem
+  .section-title__word
+    justify-content: start !important
+  .customers__photo
+    margin-right: 0
+    max-width: 58px
+  .value__text
+    font-size: 0.9rem
+  .design__pricetag
+    padding-right: 2rem
+  .card__pricetag
+    padding: 1.214rem 1rem
+  .map
+    margin: 4rem 0
+@media screen and ( max-width: 991px )
+  .hero__content 
+    max-width: 47.85rem
+    margin-left: 0rem
   .nav
     display: none
   .hero
     &__instagram
       display: none
-    &__content
-      margin-left: 0
-@media screen and ( max-width: 760px )
   .row
     flex-direction: column
     align-items: center
@@ -29,7 +79,332 @@
       color: $light
     &__card
      margin-bottom: 5.7rem
+  .container
+    width: 90%
+  .menu__logo
+    font-size: 1.4rem
+  .section
+    &-title
+      &__image
+        margin-bottom: 2rem
+        &::before, &::after
+          content: ''
+          width: 3.3rem
+          height: 0.2rem
+          background-color: $primary
+          margin: 0 1.3rem
+      &__heading
+        font-size: 2.2rem
+      &__description
+  .card
+    &__title
+      margin-top: 0.6rem
+    &__item
+      margin-bottom: 0.07rem
+    &__pricetag
+      padding: 0 2rem
+  .contacts
+    &__phone
+      margin-right: 0
+      color: $light
+      text-decoration: none
+      font-size: 1.4rem
+    &__button
+      display: none
+  .title
+    font-size: 1.64rem    
+  .hero
+    &__title
+      font-size: 2.55rem
+      max-width: 30rem
+    &__text
+      font-size: 2.01rem
+      max-width: 35.4rem
+      margin-bottom: 3.6rem
+    &__scroll-down
+      display: none
+    &__content
+      min-width: 22.86rem
+    &__button
+      margin: auto
+      display: block
+      padding: 2.16rem 0
+      width: 100%
+      font-size: 1.47rem
+      min-width: 22.86rem
+      margin-top: 2.48rem
+  .types-title__heading
+    font-size: 10rem
+  .design
+    &__section-title
+      margin-bottom: 4rem
+    &__card
+  .card
+    &__text
+      max-width: 27rem
+      margin-top: -11rem
+    &__title
+      font-size: 1.5rem
+      padding-left: 1.2rem
+      padding-bottom: 0.8rem
+    &__item
+      font-size: 1.3rem
+      padding-left: 1.2rem
+      padding-bottom: 0.5rem
+      &:nth-child(n+8)
+        display: none
+  body
+    background-color: $dark
+  .header
+    padding-top: 16px
+    padding-bottom: 20px
+  .menu
+    margin-bottom: 0
+    &__logo
+      font-size: 1.07rem
+  .contacts
+    &__phone
+      font-size: 1rem
+  .hero
+    min-height: 750px
+    &__title
+      margin-top: 1rem
+      margin-bottom: 1rem
+      font-size: 1.9rem
+    &__text
+      text-align: left
+      font-size: 1.5rem
+      max-width: 26.5rem
+      margin-bottom: 2rem
+    &__button
+      font-size: 1.1rem
+      padding: 1.3rem 1rem
+      margin-bottom: 1rem
+  .types
+    background-color: $light
+    &-title
+      &__heading
+        font-size: 1.8rem
+    &__image
+      &::before, &::after
+        margin: auto 1rem
+        width: 2.6rem
+  .card
+    &__list
+      &__design
+        margin-bottom: 1.55rem
+    margin-bottom: 6.5rem
+    &__text
+      margin-top: -11.5rem 
+      max-width: 22.3rem
+      max-height: 20rem
+      &__design
+        padding-bottom: 5rem
+    &__title
+      margin: auto
+      margin-left: -0.8rem
+      font-size: 1.25rem
+    &__item
+      font-size: 1.1rem
+      margin-bottom: 0.1rem
+      margin-left: 0.1rem
+      padding: 0
+    &__pricetag
+      font-size: 1.2rem
+      padding: 1rem 2.9rem
+  .design
+    &__pricetag
+      padding: 1rem 3.6rem
+      font-size: 1.3rem
+    &__section
+      &-title
+        margin: auto
+    &-title
+      &__description
+        text-align: center
+        font-size: 1.25rem
+        margin-bottom: 3rem
+    &__heading
+      font-size: 1.85rem
+      margin: 0
+      margin-bottom: 1rem
+    &__image
+      &::before, &::after
+        margin: auto 1rem
+        width: 2.6rem
+  .col-30
+    &__design
+      margin-bottom: 0.7rem
+  .control
+    padding-top: 35rem
+    padding-bottom: 2.9rem
+    background-color: $dark
+    &__heading
+      font-size: 1.85rem
+      margin-bottom: 1.3rem
+    &-title__image
+      &::before, &::after
+        margin: auto 1rem
+        width: 2.6rem
+    &__video
+      background: $dark url('../img/video-mask__mobile.jpg') center no-repeat
+      min-height: 18.7rem
+      margin-bottom: 2.428rem
+      &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+      
+    &__text
+      font-size: 1.15rem
+      line-height: 2rem
+      margin-bottom: 2.5rem
+      color: $light
+      &::before
+        margin-bottom: 1.45rem
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      margin-bottom: 5.4rem
+      
+    &__label
+      font-size: 1.21rem
+      color: rgba(255, 255, 255, 0.5)
+    &__input
+      font-size: 1.5rem
+      &::placeholder
+        color: $light
+    &__button
+      order: 1
+      margin-bottom: -5rem
+      font-size: 1.3rem
+      padding: 1.4rem 4.35rem
+    &__policy
+      font-size: 1.34rem
+      margin-top: -4.5rem
+      margin-bottom: 4.9rem
+      margin-left: -5.9rem
+      color: $light
+  .video__play
+    max-width: 5rem
+  .team
+    padding-top: 0
+    background-color: $dark
+    &__section-title
+      margin: auto
+      width: 100% !important
+    &-title__heading
+      font-size: 1.8rem
+    &__image
+      &::before, &::after
+        margin: auto 1rem
+        width: 2.6rem
+    &-title
+      &__description
+        font-size: 1.25rem
+        margin-bottom: 8rem
+    &__cards
+      margin-bottom: 6rem
+    &__icon
+      top: -14%
+      left: -14%
+    &__text
+      display: none
+  .section
+    &--dark
+      width: 100%
+      padding: 0
+  .container--dark
+    width: 100%
+    background-color: $dark
+  .footer
+    background-color: $dark
+    &__wrap
+      margin-bottom: 0
+      padding-bottom: 3.7rem
+    &__title
+      font-size: 1.65rem
+    &__input
+      &-group
+        flex-basis: 100%
+    &__button
+      width: 100%
+    &__text
+      margin-top: 4rem
+      max-width: 25rem
+    &__icon
+      height: 3rem
+      width: 3rem
+      border-radius: 2rem
+    &__map
+      width: 320px
+      height: 320px
+      margin: auto
+      order: -1
+      
 
+
+
+          
+  .swiper
+    &-slider
+      display: flex 
+      flex-wrap: wrap
+      &-image
+        margin-top: 2.3rem
+  .mobile-order-top
+    order: -1
+  .col-50
+    width: 100%
+  .section
+    &-title
+      width: 90%
+      &__projects
+        text-align: center
+        font-size: 1.16rem
+        max-width: 305px
+      &__word
+        margin-left: 10rem
+        &::after
+          display: none
+      &__heading
+        &--primary
+          text-align: center
+          font-size: 1.63rem
+          line-height: 1.5
+  .swiper
+    &-container
+      margin-top: 6rem
+    &-slide__heading
+      font-size: 1.16rem
+      margin-bottom: 0.9rem
+  .swiper-wrapper-bottom
+    margin-bottom: 0.5rem
+  .goals
+    display: none
+  .team
+    margin: 0 auto
+  .card-team
+    margin-bottom: 5rem
+  .customers
+    display: none
+  .footer__wrap
+    margin-top: -4rem
+
+.section
+  &-title
+    margin: 0 auto
+    &__projects
+      margin: 2rem auto
+      max-width: 90%
+.section
+  &-title__word
+    margin-left: 0
+    justify-content: center
+.control
+  padding: 2rem
 
 
 @media screen and ( max-width: 570px )
@@ -115,6 +490,14 @@
     &__scroll-down
       display: none
 @media screen and ( max-width: 375px )
+  .hero__content 
+    max-width: 47.85rem
+    margin-left: 0rem
+  .nav
+    display: none
+  .hero
+    &__instagram
+      display: none
   body
     background-color: $dark
   .header
@@ -128,7 +511,7 @@
     &__phone
       font-size: 1rem
   .hero
-    height: 70vh
+    min-height: 750px
     &__title
       margin-top: 1rem
       margin-bottom: 1rem
@@ -351,6 +734,14 @@
     margin-top: -4rem
 
 @media screen and ( max-width: 576px )
+  .hero__content 
+    max-width: 47.85rem
+    margin-left: 0rem
+  .nav
+    display: none
+  .hero
+    &__instagram
+      display: none
   .container
     width: 90%
   .menu__logo
@@ -677,5 +1068,6 @@
     justify-content: center
 .control
   padding: 2rem
+
 
   
