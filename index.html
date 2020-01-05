@@ -8,11 +8,29 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
    <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/style.css">
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU"
-     type="text/javascript"></script>
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
    <title>Repair Design Project</title>
  </head>
  <body>
+   <!-- Yandex.Metrika counter -->
+   <script type="text/javascript">
+     (function (m, e, t, r, i, k, a) {
+       m[i] = m[i] || function () {
+         (m[i].a = m[i].a || []).push(arguments)
+       };
+       m[i].l = 1 * new Date();
+       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+         a)
+     })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+     ym(56914903, "init", {
+       clickmap: true,
+       trackLinks: true,
+       accurateTrackBounce: true,
+       webvisor: true
+     });
+   </script> <noscript>
+     <div><img src="https://mc.yandex.ru/watch/56914903" style="position:absolute; left:-9999px;" alt="" /></div>
+   </noscript> <!-- /Yandex.Metrika counter -->
    <header class="header">
      <div class="container">
        <div class="menu">
@@ -27,7 +45,7 @@
          </nav>
          <div class="contacts menu__contacts">
            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-           <button class="button contacts__button contacts__button--primary" data-toggle="modal">Заказать звонок</button>
+           <button onclick="ym(64742398, 'reachGoal', 'button'); return true;" class="button contacts__button contacts__button--primary" data-toggle="modal">Заказать звонок</button>
 
          </div>
        </div>
@@ -186,7 +204,8 @@
             <!-- /.section-title__image -->
           </div>
           <!-- /.section-title -->
-          <div class="control__video video">
+          <div class="control__video video" id="player">
+            <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/play-icon.svg" alt="play-icon" class="video__play">
           </div>
           <!-- /.control__video video -->
