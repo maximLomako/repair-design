@@ -166,7 +166,7 @@ $(document).ready(function () {
           },
           error: function (jqXHR, textStatus) {
             console.error(jqXHR + " " + textStatus);
-            ym(64742437, 'reachGoal', 'sumbit__form'); return true;
+            ym('64742437', 'reachGoal', 'sumbit__form'); return true;
           }
         });
       }

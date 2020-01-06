@@ -132,11 +132,16 @@ $(document).ready(function () {
           required: true,
           minlength: 17
         },
-        userQuestion: "required",
+        userQuestion: {
+          required: true,
+        },
         // compound rule
         userEmail: {
           required: true,
           email: true
+        },
+        policy: {
+          required: true
         }
       },
       messages: {
@@ -153,6 +158,9 @@ $(document).ready(function () {
         userEmail: {
           required: "Заполните поле",
           email: "Введите Ваш email в формате name@domain.com"
+        },
+        policy: {
+          required: "Поставьте галочку!"
         }
       },
       submitHandler: function (form) {
@@ -163,10 +171,11 @@ $(document).ready(function () {
           success: function () {
             $(form)[0].reset();
             $(form).html('<p>Форма отправлена!</p>');
+            ym('56914903', 'reachGoal', 'submit__form');
+            return true;
           },
           error: function (jqXHR, textStatus) {
             console.error(jqXHR + " " + textStatus);
-            ym(64742437, 'reachGoal', 'sumbit__form'); return true;
           }
         });
       }

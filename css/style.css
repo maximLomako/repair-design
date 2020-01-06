@@ -319,13 +319,19 @@ template {
   display: none; }
 
 .button {
-  padding: 11px 24px;
+  padding: 9px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.93rem; }
+  font-size: 0.93rem;
+  border: 1px solid #E3B873; }
   .button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #fff;
+    color: #E3B873;
+    border: 1px solid #E3B873; }
+  .button:focus {
+    outline: none; }
   .button--primary {
     background-color: #E3B873;
     color: #fff;
@@ -371,6 +377,8 @@ template {
     color: #fff; }
   .input--light::placeholder {
     color: #fff; }
+  .input:focus {
+    outline: none; }
 
 .policy__checkbox {
   opacity: 0;
@@ -532,7 +540,12 @@ img {
 .logo {
   font-size: 1.075rem;
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -549,6 +562,8 @@ img {
 
 .contacts__phone {
   margin-right: 45px; }
+  .contacts__phone:hover {
+    color: #fff; }
 
 .hero {
   position: relative;
@@ -656,6 +671,8 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      color: #fff; }
 
 .title {
   max-width: 33rem;
@@ -666,6 +683,9 @@ img {
   line-height: 1.4; }
   .title--primary {
     color: #E3B873; }
+
+.phone__footer {
+  text-decoration: none; }
 
 .projects {
   padding-bottom: 30rem; }
@@ -813,6 +833,9 @@ img {
 
 .types-title__heading {
   font-size: 1.4rem; }
+
+.types__image {
+  margin: 2rem auto; }
 
 .card__image {
   display: block;
@@ -1220,6 +1243,8 @@ img {
     width: 2rem;
     border-radius: 1rem;
     background-color: #E3B873; }
+    .footer__icon:hover {
+      background-color: #E3B823; }
   .footer__content {
     display: -webkit-box;
     display: flex;
