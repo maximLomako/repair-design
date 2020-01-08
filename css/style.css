@@ -409,8 +409,9 @@ div.invalid {
   color: tomato; }
 
 div.invalid {
-  border-top: 1px solid tomato;
-  padding-top: 1rem; }
+  position: absolute;
+  padding-top: 1rem;
+  margin-top: 4rem; }
 
 #toTop {
   position: fixed;
