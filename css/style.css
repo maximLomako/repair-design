@@ -378,7 +378,7 @@ template {
   .input--light::placeholder {
     color: #fff; }
   .input:focus {
-    outline: none; }
+    background-color: #E3B873; }
 
 .policy__checkbox {
   opacity: 0;
@@ -426,10 +426,12 @@ div.invalid {
   font-family: 'Yeseva One', cursive;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  #toTop:focus {
-    outline: none; }
-  #toTop:hover {
-    color: rgba(227, 184, 115, 0.5); }
+
+.top-arrow {
+  height: 40px;
+  width: 40px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .container {
   width: 85%;
@@ -1272,6 +1274,8 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__links {
+    height: 13px; }
 
 .modal {
   opacity: 0;
@@ -1404,6 +1408,10 @@ img {
     margin-top: 5rem; } }
 
 @media screen and (max-width: 991px) {
+  .button:hover {
+    background-color: #E3B873;
+    color: #fff;
+    border: 1px solid #E3B873; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
@@ -1746,6 +1754,10 @@ img {
   padding: 2rem; }
 
 @media screen and (max-width: 570px) {
+  .button:hover {
+    background-color: #E3B873;
+    color: #fff;
+    border: 1px solid #E3B873; }
   .container {
     width: 90%; }
   .menu__logo {
@@ -1823,6 +1835,10 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .button:hover {
+    background-color: #E3B873;
+    color: #fff;
+    border: 1px solid #E3B873; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
@@ -2391,8 +2407,27 @@ img {
     padding: 2rem; }
   .phone__footer {
     color: #E3B873 !important;
-    font-size: 1.257rem !important; } }
+    font-size: 1.257rem !important; }
+  .button:hover {
+    background-color: #E3B873;
+    color: #fff;
+    border: 1px solid #E3B873; } }
 
 @media screen and (max-height: 700px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 320px) {
+  .team__icon {
+    display: none; }
+  .footer__map {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+    margin-top: 5rem; }
+  .button:hover {
+    background-color: #E3B873;
+    color: #fff;
+    border: 1px solid #E3B873; } }
