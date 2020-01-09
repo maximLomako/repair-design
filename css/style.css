@@ -995,7 +995,8 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 0.895rem; }
+    margin-bottom: 0.895rem;
+    margin-top: 3rem; }
   .team-title__description {
     margin: auto;
     margin-top: 1.64rem;
@@ -1339,6 +1340,10 @@ img {
     font-size: 1rem;
     padding: 1.28rem 3.19rem; }
 
+@media screen and (max-width: 1400px) {
+  .goals__tabs {
+    width: 51.5rem; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -1395,7 +1400,8 @@ img {
   .card__pricetag {
     padding: 1.214rem 1rem; }
   .map {
-    margin: 4rem 0; } }
+    margin: 4rem 0;
+    margin-top: 5rem; } }
 
 @media screen and (max-width: 991px) {
   .hero__content {
@@ -1571,8 +1577,8 @@ img {
       margin: auto 1rem;
       width: 2.6rem; }
     .control__video {
-      background: #131313 url("../img/video-mask__mobile.jpg") center no-repeat;
-      min-height: 18.7rem;
+      background: #131313 url("../img/video-mask.jpg") center center no-repeat;
+      min-height: 28.7rem;
       margin-bottom: 2.428rem; }
       .control__video::before {
         position: absolute;
@@ -1622,7 +1628,7 @@ img {
       margin-left: -5.9rem;
       color: #fff; }
   .video__play {
-    max-width: 5rem; }
+    max-width: 10rem; }
   .team {
     padding-top: 0;
     background-color: #131313; }
@@ -1669,11 +1675,19 @@ img {
       width: 3rem;
       border-radius: 2rem; }
     .footer__map {
-      width: 320px;
-      height: 320px;
+      width: 500px;
+      height: 500px;
       margin: auto;
       -webkit-box-ordinal-group: 0;
-      order: -1; }
+      order: -1;
+      margin-top: 5rem; }
+  .phone__footer {
+    color: #E3B873 !important;
+    font-size: 1.257rem !important; }
+  .footer__logo {
+    display: none; }
+  .footer__contact-phone {
+    display: none; }
   .swiper-slider {
     display: -webkit-box;
     display: flex;
@@ -1799,7 +1813,10 @@ img {
       display: none; }
   .card__pricetag {
     font-size: 1.5rem;
-    padding: 1.2rem 5rem; } }
+    padding: 1.2rem 5rem; }
+  .phone__footer {
+    color: #E3B873 !important;
+    font-size: 1.257rem !important; } }
 
 @media screen and (max-height: 520px) {
   __scroll-down {
@@ -1999,7 +2016,8 @@ img {
       height: 320px;
       margin: auto;
       -webkit-box-ordinal-group: 0;
-      order: -1; }
+      order: -1;
+      margin-top: 5rem; }
   .swiper-slider {
     display: -webkit-box;
     display: flex;
@@ -2041,7 +2059,14 @@ img {
   .customers {
     display: none; }
   .footer__wrap {
-    margin-top: -4rem; } }
+    margin-top: -4rem; }
+  .phone__footer {
+    color: #E3B873 !important;
+    font-size: 1.257rem !important; }
+  .footer__logo {
+    display: none; }
+  .footer__contact-phone {
+    display: none; } }
 
 @media screen and (max-width: 576px) {
   .hero__content {
@@ -2301,8 +2326,16 @@ img {
       width: 320px;
       height: 320px;
       margin: auto;
+      margin-top: 5rem;
       -webkit-box-ordinal-group: 0;
       order: -1; }
+  .footer__logo {
+    display: none; }
+  .footer__contact-phone {
+    display: none; }
+  .phone__footer {
+    color: #E3B873 !important;
+    font-size: 1.257rem !important; }
   .swiper-slider {
     display: -webkit-box;
     display: flex;
@@ -2344,18 +2377,22 @@ img {
   .customers {
     display: none; }
   .footer__wrap {
-    margin-top: -4rem; } }
+    margin-top: -4rem; }
+  .section-title {
+    margin: 0 auto; }
+    .section-title__projects {
+      margin: 2rem auto;
+      max-width: 90%; }
+  .section-title__word {
+    margin-left: 0;
+    -webkit-box-pack: center;
+    justify-content: center; }
+  .control {
+    padding: 2rem; }
+  .phone__footer {
+    color: #E3B873 !important;
+    font-size: 1.257rem !important; } }
 
-.section-title {
-  margin: 0 auto; }
-  .section-title__projects {
-    margin: 2rem auto;
-    max-width: 90%; }
-
-.section-title__word {
-  margin-left: 0;
-  -webkit-box-pack: center;
-  justify-content: center; }
-
-.control {
-  padding: 2rem; }
+@media screen and (max-height: 700px) {
+  .hero__scroll-down {
+    display: none; } }

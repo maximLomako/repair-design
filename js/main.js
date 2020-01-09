@@ -74,16 +74,16 @@ $(document).ready(function () {
 
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper('.swiper-container', {
+  var sliderProject = new Swiper('.project__swiper', {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination--project',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next--project',
+      prevEl: '.swiper-button-prev--project',
     },
   })
   var next = $('.swiper-button-next');
@@ -92,27 +92,46 @@ $(document).ready(function () {
 
 
   next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10)
+  bullets.css('left', prev.width() + 10);
   //slider-end
 
   // slider 2.0
+  var sliderGoal = new Swiper('.goal__swiper', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination--goal',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next--goal',
+      prevEl: '.swiper-button-prev--goal',
+    },
+  });
 
   $('.goals__tabs-item').on('click', function () {
     $('.goals__tabs-item').removeClass('active');
     $(this).addClass('active');
     const e = $(this).data('index');
-    mySwiper[2].slideTo(e);
-    mySwiper[3].slideTo(e);
-  })
+    sliderGoal[0].slideTo(e);
+    sliderGoal[1].slideTo(e);
+  }),
 
-  mySwiper[2].on('slideChange', () => {
-    let e = mySwiper[2].activeIndex - 1;
+    sliderGoal[0].on('slideChange', () => {
+    let e = sliderGoal[0].activeIndex - 1;
     if (e === 6) {
-      e = 0
+      e = 0;
     };
+
     $('.goals__tabs-item').removeClass('active');
     $('.goals__tabs-item').eq(e).addClass('active');
-  })
+  });
+
+    var next = $('.swiper-button-next--goal');
+    var prev = $('.swiper-button-prev--goal');
+    var bullets = $('.swiper-pagination--goal');
+    next.css('left', prev.width() + 10 + bullets.width() + 10)
+    bullets.css('left', prev.width() + 10);
 
   new WOW().init();
 
