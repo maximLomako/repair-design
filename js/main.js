@@ -39,10 +39,13 @@ let check_if_load = false;
 
 $(document).ready(function () {
   const modalClick = (e) => {
+    if (e.target.className === "policy__label") {
+      $('input[type=checkbox]').trigger('click');
+    }
     e.preventDefault();
     e.stopPropagation();
     e.stopImmediatePropagation();
-    return false;
+    
   }
 
   $('#map').mouseenter(function () {
@@ -55,9 +58,11 @@ $(document).ready(function () {
   });
 
   var modal = $('.modal'),
+    secondModal = $('.second__modal'),
     modalDialog = $('.modal__dialog'),
     modalBtn = $('[data-toggle=modal]'),
     closeBtn = $('.modal__close'),
+    btn = $('.second__modal__close'),
     submitBtn = $('#submit-form');
   submitBtn.on('click', function () {
     $('.modal__form').submit()
@@ -71,6 +76,11 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible')
   });
+
+    btn.on('click', function () {
+    secondModal.toggleClass('second__modal--visible')
+  });
+  
 
 
   //initialize swiper when document ready
@@ -146,7 +156,6 @@ $(document).ready(function () {
        console.log(e);
      });
 
-     sliderFantasy[1].slideTo(1);
 
 
 
@@ -177,7 +186,7 @@ $(document).ready(function () {
           required: true,
           email: true
         },
-        policy: {
+        ["policy-checkbox__modal"]: {
           required: true
         }
       },
@@ -196,7 +205,7 @@ $(document).ready(function () {
           required: "Заполните поле",
           email: "Введите Ваш email в формате name@domain.com"
         },
-        policy: {
+        ["policy-checkbox__modal"]: {
           required: "Поставьте галочку!"
         }
       },
@@ -207,9 +216,11 @@ $(document).ready(function () {
           data: $(form).serialize(),
           success: function () {
             $(form)[0].reset();
-            $(form).html('<p>Форма отправлена!</p>');
             ym('56914903', 'reachGoal', 'submit__form');
+            modal.toggleClass('modal--visible')
+            secondModal.toggleClass('second__modal--visible')
             return true;
+            
           },
           error: function (jqXHR, textStatus) {
             console.error(jqXHR + " " + textStatus);
@@ -221,6 +232,8 @@ $(document).ready(function () {
   validateForm('.modal__form');
   validateForm('.control__form');
   validateForm('.footer__form');
+  validateForm('.advantages__form');
+
 
   // маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {

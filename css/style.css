@@ -1538,6 +1538,49 @@ img {
     font-size: 1rem;
     padding: 1.28rem 3.19rem; }
 
+.second__modal {
+  display: none;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center; }
+  .second__modal--visible {
+    visibility: visible; }
+  .second__modal__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    background: #131313 url(../img/bg-lines.svg) no-repeat center;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #fff; }
+  .second__modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../img/close.svg") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .second__modal__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.94rem; }
+
 @media screen and (max-width: 1400px) {
   .goals__tabs {
     width: 51.5rem; } }
