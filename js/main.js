@@ -133,6 +133,24 @@ $(document).ready(function () {
     next.css('left', prev.width() + 10 + bullets.width() + 10)
     bullets.css('left', prev.width() + 10);
 
+   var sliderFantasy = new Swiper('.fantasy-swiper', {
+     direction: 'vertical',
+     noSwipingClass: 'noswipe',
+   });
+
+   $('.fantasy__list').on('click', function () {
+       $('.fantasy__list').removeClass('active');
+       $(this).addClass('active');
+       const e = $(this).data('index');
+       sliderFantasy.slideTo(e);
+       console.log(e);
+     });
+
+     sliderFantasy[1].slideTo(1);
+
+
+
+
   new WOW().init();
 
   //form validation

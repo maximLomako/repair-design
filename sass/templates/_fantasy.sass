@@ -1,0 +1,77 @@
+.fantasy
+  position: relative
+  background: $dark url('../img/fantasy/bg-fantasy.jpg') no-repeat center / cover
+  max-height: 61.7rem
+  &__image-part
+    position: absolute
+    top: -23%
+    left: 39%
+    margin-left: 2rem
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.8)
+    top: 0
+    lefy: 0
+    z-index: 1
+  &__container
+    display: flex
+  &__header
+    position: relative
+    margin-bottom: 3.357rem
+    max-width: 29.35rem
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.928rem
+    line-height: 2.64rem
+    text-transform: uppercase
+    color: $primary
+    z-index: 2
+  &__tabs
+    padding: 0
+  &__list
+    position: relative
+    z-index: 2
+    margin-bottom: 2rem
+    list-style: none
+    font-family: 'Futura Book', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 1.428rem
+    color: $light
+    cursor: pointer
+  &-swiper
+    &__clock
+      max-width: 25.28rem
+      max-height: 39.88rem
+      margin-bottom: 2.78rem
+    &__tv
+      max-width: 25.28rem
+      max-height: 24.92rem
+    &__sofa
+      max-width: 25.28rem
+      max-height: 19.64rem
+      margin-bottom: 2.64rem
+    &__side
+      max-width: 25.28rem
+      max-height: 44.57rem
+  &__left-column
+    display: flex
+    flex-direction: column
+    margin-right: 3rem
+    margin-top: 10rem
+  &__right-column
+    display: flex
+    flex-direction: column
+  .fantasy__image-part
+    max-height: 950px
+  .fantasy__swiper-slide
+    max-height: 950px
+
+
+
+
+    

@@ -453,11 +453,17 @@ div.invalid {
 .col-40 {
   width: 40%; }
 
+.col-45 {
+  width: 45%; }
+
 .col-50 {
   width: 50%; }
 
 .col-60 {
   width: 60%; }
+
+.col-65 {
+  width: 65%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -886,7 +892,8 @@ img {
   display: flex; }
 
 .advantages {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 20rem; }
   .advantages__title {
     max-width: 27rem;
     font-family: 'Futura Book', sans-serif;
@@ -988,22 +995,100 @@ img {
   margin-left: 8rem;
   margin-top: 7rem; }
 
-.design-title__description {
-  font-size: 1.42rem; }
+.fantasy {
+  position: relative;
+  background: #131313 url("../img/fantasy/bg-fantasy.jpg") no-repeat center/cover;
+  max-height: 61.7rem; }
+  .fantasy__image-part {
+    position: absolute;
+    top: -23%;
+    left: 39%;
+    margin-left: 2rem; }
+  .fantasy::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.8);
+    top: 0;
+    lefy: 0;
+    z-index: 1; }
+  .fantasy__container {
+    display: -webkit-box;
+    display: flex; }
+  .fantasy__header {
+    position: relative;
+    margin-bottom: 3.357rem;
+    max-width: 29.35rem;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.928rem;
+    line-height: 2.64rem;
+    text-transform: uppercase;
+    color: #E3B873;
+    z-index: 2; }
+  .fantasy__tabs {
+    padding: 0; }
+  .fantasy__list {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+    list-style: none;
+    font-family: 'Futura Book', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.428rem;
+    color: #fff;
+    cursor: pointer; }
+  .fantasy-swiper__clock {
+    max-width: 25.28rem;
+    max-height: 39.88rem;
+    margin-bottom: 2.78rem; }
+  .fantasy-swiper__tv {
+    max-width: 25.28rem;
+    max-height: 24.92rem; }
+  .fantasy-swiper__sofa {
+    max-width: 25.28rem;
+    max-height: 19.64rem;
+    margin-bottom: 2.64rem; }
+  .fantasy-swiper__side {
+    max-width: 25.28rem;
+    max-height: 44.57rem; }
+  .fantasy__left-column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-top: 10rem; }
+  .fantasy__right-column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .fantasy .fantasy__image-part {
+    max-height: 950px; }
+  .fantasy .fantasy__swiper-slide {
+    max-height: 950px; }
 
-.design__heading {
-  font-size: 1.45rem; }
-
-.design__section-title {
-  margin-bottom: 2.78rem; }
-  .design__section-title__description {
-    max-width: 740px; }
-
-.design__pricetag {
-  font-size: 1.2rem;
-  padding-top: 1.214rem;
-  padding-bottom: 1.214rem;
-  padding-right: 6rem; }
+.design {
+  padding-top: 15rem; }
+  .design-title__description {
+    font-size: 1.42rem; }
+  .design__heading {
+    font-size: 1.45rem; }
+  .design__section-title {
+    margin-bottom: 2.78rem; }
+    .design__section-title__description {
+      max-width: 740px; }
+  .design__pricetag {
+    font-size: 1.2rem;
+    padding-top: 1.214rem;
+    padding-bottom: 1.214rem;
+    padding-right: 6rem; }
 
 .section-title__heading--primary {
   font-size: 1.75rem;
