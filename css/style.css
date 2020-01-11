@@ -407,13 +407,13 @@ template {
 
 div .invalid {
   margin-top: 0rem;
-  color: tomato;
   border-bottom: 1px solid red; }
 
 div.invalid {
   position: absolute;
   padding-top: 1rem;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  color: tomato; }
 
 #user-name__modal-error {
   border: none; }
@@ -431,7 +431,19 @@ div.invalid {
   border: none; }
 
 #policy-checkbox__control-error {
-  border: none; }
+  border: none;
+  padding-top: 1rem;
+  margin-top: 1rem; }
+
+#policy-checkbox__modal-error {
+  border: none;
+  padding-top: 1rem;
+  margin-top: 1rem; }
+
+#policy-checkbox__footer-error {
+  border: none;
+  padding-top: 1rem;
+  margin-top: 1rem; }
 
 #user-name__footer-error {
   border: none; }
@@ -1194,7 +1206,7 @@ img {
       font-size: 1.07rem;
       line-height: 1.5rem;
       text-transform: uppercase;
-      border-bottom: 2px solid rgba(227, 184, 115, 0.3);
+      border-bottom: 2px solid grey;
       margin-bottom: 1rem; }
     .goals__tabs-text {
       font-family: 'Futura book', sans-serif;

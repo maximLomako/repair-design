@@ -38,7 +38,6 @@
 
 $(document).ready(function () {
   $("#menu").on("click", "a", function (event) {
-    console.log("hey");
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
     //забираем идентификатор бока с атрибута href
@@ -64,14 +63,7 @@ $(document).ready(function () {
     
   }
 
-  $('#map').mouseenter(function () {
-    if (!check_if_load) {
-      check_if_load = true;
-      loadScript("https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU", () => {
-        ymaps.ready(initMap);
-      });
-    }
-  });
+  
 
   var modal = $('.modal'),
     secondModal = $('.second__modal'),
@@ -273,6 +265,7 @@ $(document).ready(function () {
           success: function () {
             $(form)[0].reset();
             ym('56914903', 'reachGoal', 'submit__form');
+            $('.modal--visible').trigger('click'),
             secondModal.toggleClass('second__modal--visible')
             return true;
             
