@@ -153,24 +153,6 @@ $(document).ready(function () {
     $('.goals__tabs-item').eq(e).addClass('active');
   });
 
-  $('.goals__tabs-number').on('click', function () {
-      $('.goals__tabs-number').removeClass('__border');
-      $(this).addClass('active__border');
-      const e = $(this).data('index');
-      sliderGoal[0].slideTo(e);
-      sliderGoal[1].slideTo(e);
-    }),
-
-    sliderGoal[0].on('slideChange', () => {
-      let e = sliderGoal[0].activeIndex - 1;
-      if (e === 6) {
-        e = 0;
-      };
-
-      $('.goals__tabs-number').removeClass('active__border');
-      $('.goals__tabs-number').eq(e).addClass('active__border');
-    });
-
     var next = $('.swiper-button-next--goal');
     var prev = $('.swiper-button-prev--goal');
     var bullets = $('.swiper-pagination--goal');
@@ -222,13 +204,7 @@ $(document).ready(function () {
         },
         ["policy-checkbox__modal"]: {
           required: true
-        },
-        ["policy-checkbox__control"]: {
-          required: true
-        },
-        ["policy-checkbox__footer"]: {
-          required: true
-        },
+        }
       },
       messages: {
         userName: {
@@ -247,13 +223,7 @@ $(document).ready(function () {
         },
         ["policy-checkbox__modal"]: {
           required: "Поставьте галочку!"
-        },
-        ["policy-checkbox__control"]: {
-          required: "Поставьте галочку!"
-        },
-        ["policy-checkbox__footer"]: {
-          required: "Поставьте галочку!"
-        },
+        }
       },
 
       errorPlacement: function (error, element) {
@@ -292,7 +262,7 @@ $(document).ready(function () {
 
   // маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00', {
-    placeholder: "Ваш телефон"
+    placeholder: "+7 (___) ___-__-__"
   });
 
   var player;
