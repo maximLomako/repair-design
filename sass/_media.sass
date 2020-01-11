@@ -43,7 +43,7 @@
     margin: 2rem auto
   .card
     &__text
-      max-width: 17rem
+      max-width: 21rem
   .section-title__word
     justify-content: start !important
   .customers__photo
@@ -96,8 +96,12 @@
       position: absolute
       top: 83.5%
       left: -37%
-
 @media screen and ( max-width: 991px )
+  
+  .top-arrow
+    display: none
+  .footer__menu
+    display: none
   .advantages
     display: none
   .button
@@ -467,6 +471,8 @@
 
 
 @media screen and ( max-width: 570px )
+  .footer__menu
+    display: none
   .button
     &:hover
       background-color: $primary
@@ -559,6 +565,12 @@
     &__scroll-down
       display: none
 @media screen and ( max-width: 375px )
+  .control
+    margin-top: 15rem
+  .project__swiper
+    margin-bottom: -13rem
+  .top-arrow
+    display: none
   .advantages
     display: none
   .button
@@ -816,9 +828,14 @@
     display: none
   .footer__contact-phone
     display: none
+  .footer__menu
+    display: none
 
 
 @media screen and ( max-width: 576px )
+  
+  .top-arrow
+    display: none
   .hero__content 
     max-width: 47.85rem
     margin-left: 0rem
@@ -1101,6 +1118,8 @@
     font-size: 1.257rem!important
   .advantages
     display: none
+  .footer__menu
+    display: none
   
 
 
@@ -1176,6 +1195,10 @@
     display: none
 
 @media screen and ( max-width: 320px )
+  .top-arrow
+    display: none
+  .team__cards
+    margin-bottom: 1rem
   .team__icon
     display: none
   .footer__map
@@ -1269,4 +1292,10 @@
       position: absolute
       top: 84%
       left: -33%
-  
+@media screen and ( max-width: 991px ) and ( min-width: 577px )
+  .project__container
+    max-width: 60%
+  .swiper-container
+    margin-bottom: -8rem
+  .control
+    margin-top: 15rem

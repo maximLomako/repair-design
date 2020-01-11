@@ -32,6 +32,8 @@
     border: none
     margin: 12px
     cursor: pointer
+    &--outline
+      display: none
   &__title
     font-family: 'Yeseva One', cursive
     font-size: 1.357rem
@@ -58,7 +60,6 @@
     padding: 1.28rem 3.19rem
 
 .second__modal
-  display: none
   position: fixed
   z-index: 199
   left: 0
@@ -71,8 +72,10 @@
   display: flex
   justify-content: center
   align-items: center
+  display: none
   &--visible
-    visibility: visible
+    display: flex!important
+    
   &__dialog
     position: relative
     max-width: 36.36rem

@@ -379,7 +379,7 @@ template {
     color: #fff; }
   .input:focus {
     outline: none;
-    background-color: #E3B873; }
+    border-bottom: 1px solid #E3B873; }
 
 .policy__checkbox {
   opacity: 0;
@@ -1075,7 +1075,7 @@ img {
     max-height: 950px; }
 
 .design {
-  padding-top: 15rem; }
+  padding-top: 5rem; }
   .design-title__description {
     font-size: 1.42rem; }
   .design__heading {
@@ -1156,7 +1156,8 @@ img {
       -webkit-box-pack: justify;
       justify-content: space-between;
       flex-basis: 33.3%;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      color: grey; }
     .goals__tabs-number {
       max-width: 1.1rem;
       font-family: 'Yeseva One', cursive;
@@ -1165,19 +1166,17 @@ img {
       font-size: 1.07rem;
       line-height: 1.5rem;
       text-transform: uppercase;
-      color: #fff;
       border-bottom: 2px solid #E3B873;
       margin-bottom: 1rem; }
-  .goals-text {
-    font-family: 'Futura book', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.07rem;
-    line-height: 1.285rem;
-    color: red; }
+    .goals__tabs-text {
+      font-family: 'Futura book', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.07rem;
+      line-height: 1.285rem; }
 
 .active {
-  color: #E3B873; }
+  color: #fff; }
 
 .team {
   margin: auto;
@@ -1374,7 +1373,7 @@ img {
     margin: auto;
     margin-top: -20rem;
     margin-bottom: 3.714rem;
-    background-color: #181818;
+    background: #131313 url(../img/footer__b-lines.svg) no-repeat center;
     max-width: 63.07rem;
     min-height: 31.78rem;
     padding: 2.5rem; }
@@ -1442,7 +1441,7 @@ img {
     border-radius: 1rem;
     background-color: #E3B873; }
     .footer__icon:hover {
-      background-color: #E3B823; }
+      box-shadow: 0 0 50px rgba(227, 184, 115, 0.5); }
   .footer__content {
     display: -webkit-box;
     display: flex;
@@ -1508,6 +1507,8 @@ img {
     border: none;
     margin: 12px;
     cursor: pointer; }
+    .modal__close--outline {
+      display: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -1539,7 +1540,6 @@ img {
     padding: 1.28rem 3.19rem; }
 
 .second__modal {
-  display: none;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -1554,9 +1554,11 @@ img {
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  align-items: center; }
+  align-items: center;
+  display: none; }
   .second__modal--visible {
-    visibility: visible; }
+    display: -webkit-box !important;
+    display: flex !important; }
   .second__modal__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -1627,7 +1629,7 @@ img {
   .types__image {
     margin: 2rem auto; }
   .card__text {
-    max-width: 17rem; }
+    max-width: 21rem; }
   .section-title__word {
     -webkit-box-pack: start !important;
     justify-content: start !important; }
@@ -1681,6 +1683,10 @@ img {
     left: -37%; } }
 
 @media screen and (max-width: 991px) {
+  .top-arrow {
+    display: none; }
+  .footer__menu {
+    display: none; }
   .advantages {
     display: none; }
   .button:hover {
@@ -2029,6 +2035,8 @@ img {
   padding: 2rem; }
 
 @media screen and (max-width: 570px) {
+  .footer__menu {
+    display: none; }
   .button:hover {
     background-color: #E3B873;
     color: #fff;
@@ -2112,6 +2120,12 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .control {
+    margin-top: 15rem; }
+  .project__swiper {
+    margin-bottom: -13rem; }
+  .top-arrow {
+    display: none; }
   .advantages {
     display: none; }
   .button:hover {
@@ -2361,9 +2375,13 @@ img {
   .footer__logo {
     display: none; }
   .footer__contact-phone {
+    display: none; }
+  .footer__menu {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .top-arrow {
+    display: none; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
@@ -2633,6 +2651,8 @@ img {
     font-size: 1.257rem !important; }
   .advantages {
     display: none; }
+  .footer__menu {
+    display: none; }
   .swiper-slider {
     display: -webkit-box;
     display: flex;
@@ -2699,6 +2719,10 @@ img {
     display: none; } }
 
 @media screen and (max-width: 320px) {
+  .top-arrow {
+    display: none; }
+  .team__cards {
+    margin-bottom: 1rem; }
   .team__icon {
     display: none; }
   .footer__map {
@@ -2790,3 +2814,11 @@ img {
     position: absolute;
     top: 84%;
     left: -33%; } }
+
+@media screen and (max-width: 991px) and (min-width: 577px) {
+  .project__container {
+    max-width: 60%; }
+  .swiper-container {
+    margin-bottom: -8rem; }
+  .control {
+    margin-top: 15rem; } }

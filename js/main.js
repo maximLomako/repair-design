@@ -35,6 +35,22 @@
   });
   });
 */
+
+$(document).ready(function () {
+  $("#menu").on("click", "a", function (event) {
+    console.log("hey");
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  })
+});
+
+
 let check_if_load = false;
 
 $(document).ready(function () {
@@ -209,6 +225,16 @@ $(document).ready(function () {
           required: "Поставьте галочку!"
         }
       },
+
+      errorPlacement: function (error, element) {
+        if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+        }
+
+        error.insertAfter($(element));
+      },
+
+
       submitHandler: function (form) {
         $.ajax({
           type: "POST",
@@ -217,7 +243,6 @@ $(document).ready(function () {
           success: function () {
             $(form)[0].reset();
             ym('56914903', 'reachGoal', 'submit__form');
-            modal.toggleClass('modal--visible')
             secondModal.toggleClass('second__modal--visible')
             return true;
             
@@ -243,7 +268,7 @@ $(document).ready(function () {
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '450',
+      height: '100%',
       width: '100%',
       videoId: 'RHzzLqJWqHs',
       events: {
