@@ -63,7 +63,14 @@ $(document).ready(function () {
     
   }
 
-  
+  $('#map').mouseenter(function () {
+    if (!check_if_load) {
+      check_if_load = true;
+      loadScript("https://api-maps.yandex.ru/2.1/?apikey=855cdcb8-f608-4649-b239-02a21e9bd816&lang=ru_RU", () => {
+        ymaps.ready(initMap);
+      });
+    }
+  });
 
   var modal = $('.modal'),
     secondModal = $('.second__modal'),
@@ -151,6 +158,9 @@ $(document).ready(function () {
       const e = $(this).data('index');
       sliderGoal[0].slideTo(e);
       sliderGoal[1].slideTo(e);
+
+    $('.goals__tabs-item').removeClass('active');
+    $('.goals__tabs-item').eq(e).addClass('active');
     }),
 
     sliderGoal[0].on('slideChange', () => {
