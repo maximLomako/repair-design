@@ -35,7 +35,8 @@
 .label
   font-size: 1.07rem
   &--light
-    color: rgba($light, 0.5)
+    color: $light
+    
 .input
   background-color: transparent
   border: none
@@ -48,7 +49,7 @@
       color: $light
   &:focus
     outline: none
-    border-bottom: 1px solid $primary
+    border-bottom: 1px solid &light
 .policy
   &__checkbox
     opacity: 0
@@ -127,3 +128,6 @@ div
   height: 40px
   width: 40px
   transform: rotate(180deg)
+.swiper-pagination-bullet 
+  margin: 0px 8px!important
+  padding: 5px

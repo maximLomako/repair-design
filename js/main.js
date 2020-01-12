@@ -116,8 +116,8 @@ $(document).ready(function () {
   var bullets = $('.swiper-pagination');
 
 
-  next.css('left', prev.width() + 10 + bullets.width() + 10)
-  bullets.css('left', prev.width() + 10);
+  next.css('left', prev.width() + 25 + bullets.width() + 25)
+  bullets.css('left', prev.width() + 25);
   //slider-end
 
   // slider 2.0
@@ -127,6 +127,8 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination--goal',
       type: 'bullets',
+      clickable: true,
+      spaceBetween: 999999,
     },
     navigation: {
       nextEl: '.swiper-button-next--goal',
@@ -140,6 +142,8 @@ $(document).ready(function () {
     const e = $(this).data('index');
     sliderGoal[0].slideTo(e);
     sliderGoal[1].slideTo(e);
+    $('.goals__tabs-number').removeClass('active__border');
+    $('.goals__tabs-number').eq(e-1).addClass('active__border');
   }),
 
     sliderGoal[0].on('slideChange', () => {
@@ -153,16 +157,17 @@ $(document).ready(function () {
   });
 
   $('.goals__tabs-number').on('click', function () {
-      $('.goals__tabs-number').removeClass('__border');
+    $('.goals__tabs-number').removeClass('active__border');
       $(this).addClass('active__border');
       const e = $(this).data('index');
       sliderGoal[0].slideTo(e);
       sliderGoal[1].slideTo(e);
 
-    $('.goals__tabs-item').removeClass('active');
-    $('.goals__tabs-item').eq(e).addClass('active');
+    $('.goals__tabs-number').removeClass('active__border');
+    $('.goals__tabs-number').eq(e).addClass('active__border');
     }),
 
+    
     sliderGoal[0].on('slideChange', () => {
       let e = sliderGoal[0].activeIndex - 1;
       if (e === 6) {

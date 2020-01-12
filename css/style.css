@@ -367,8 +367,6 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.6rem 0; }
-  .input--light::-webkit-input-placeholder {
-    color: #fff; }
   .input--light::-moz-placeholder {
     color: #fff; }
   .input--light:-ms-input-placeholder {
@@ -473,6 +471,10 @@ div.invalid {
   width: 40px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
+
+.swiper-pagination-bullet {
+  margin: 0px 8px !important;
+  padding: 5px; }
 
 .container {
   width: 85%;
@@ -748,7 +750,7 @@ img {
   .swiper-slider-image {
     margin-top: -10rem; }
   .swiper-slide__text {
-    flex-basis: 50%;
+    flex-basis: 35%;
     margin-bottom: -1.4rem;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
@@ -1206,7 +1208,7 @@ img {
       font-size: 1.07rem;
       line-height: 1.5rem;
       text-transform: uppercase;
-      border-bottom: 2px solid grey;
+      border-bottom: 2px solid #7B6536;
       margin-bottom: 1rem; }
     .goals__tabs-text {
       font-family: 'Futura book', sans-serif;
@@ -1496,6 +1498,7 @@ img {
     -webkit-box-align: center;
     align-items: center; }
   .footer__map {
+    background: url("../img/map.png");
     margin: auto;
     width: 920px;
     margin-bottom: 4rem;
@@ -1551,7 +1554,7 @@ img {
     margin: 12px;
     cursor: pointer; }
     .modal__close--outline {
-      display: none; }
+      display: none !important; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -2423,6 +2426,10 @@ img {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .control__text {
+    font-size: 1rem !important; }
+  .swiper-slide__text {
+    flex-basis: 40%; }
   .top-arrow {
     display: none; }
   .hero__content {
@@ -2583,7 +2590,8 @@ img {
     .control__video {
       background: #131313 url("../img/video-mask__mobile.jpg") center no-repeat;
       min-height: 18.7rem;
-      margin-bottom: 2.428rem; }
+      margin-bottom: 2.428rem;
+      background-size: 290px 90%; }
       .control__video::before {
         position: absolute;
         content: '';

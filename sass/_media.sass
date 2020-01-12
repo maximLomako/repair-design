@@ -833,7 +833,10 @@
 
 
 @media screen and ( max-width: 576px )
-  
+  .control__text
+    font-size: 1rem
+  .swiper-slide__text
+    flex-basis: 40%
   .top-arrow
     display: none
   .hero__content 
@@ -1015,6 +1018,7 @@
       background: $dark url('../img/video-mask__mobile.jpg') center no-repeat
       min-height: 18.7rem
       margin-bottom: 2.428rem
+      background-size: 290px 90%
       &::before
         position: absolute
         content: ''
