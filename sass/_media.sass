@@ -1,6 +1,24 @@
 @media screen and ( max-width: 1400px )
   .goals__tabs
     width: 51.5rem
+  .label
+    font-size: 1.07rem
+  &--light
+    color: $light
+    
+  .input
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+    font-size: 1.285rem
+    color: #757575
+    padding: 0.6rem 0
+    &--light
+      &::placeholder
+        color: $light
+    &:focus
+      outline: none
+      border-bottom: 1px solid $primary
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -565,6 +583,15 @@
     &__scroll-down
       display: none
 @media screen and ( max-width: 375px )
+  .control__text
+    font-size: 1rem
+  .modal__button
+    margin: auto
+  .input
+    color: $light
+    border-bottom: 1px solid $light
+  .label
+    color: #757575
   .control
     margin-top: 15rem
   .project__swiper
@@ -833,6 +860,13 @@
 
 
 @media screen and ( max-width: 576px )
+  .modal__button
+    margin: auto
+  .input
+    color: $light
+    border-bottom: 1px solid $light
+  .label
+    color: #757575
   .control__text
     font-size: 1rem
   .swiper-slide__text
@@ -1199,6 +1233,14 @@
     display: none
 
 @media screen and ( max-width: 320px )
+  .modal__button
+    margin: auto
+  .input
+    color: $light
+    border-bottom: 1px solid $light
+  .label
+    color: #757575!important
+
   .top-arrow
     display: none
   .team__cards
@@ -1297,6 +1339,11 @@
       top: 84%
       left: -33%
 @media screen and ( max-width: 991px ) and ( min-width: 577px )
+  .input
+    color: $light
+    border-bottom: 1px solid $light
+  .label
+    color: #757575
   .project__container
     max-width: 60%
   .swiper-container

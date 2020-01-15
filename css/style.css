@@ -358,15 +358,17 @@ template {
 .label {
   font-size: 1.07rem; }
   .label--light {
-    color: rgba(255, 255, 255, 0.5); }
+    color: #fff; }
 
 .input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
-  color: #fff;
+  color: #757575;
   padding: 0.6rem 0; }
+  .input--light::-webkit-input-placeholder {
+    color: #fff; }
   .input--light::-moz-placeholder {
     color: #fff; }
   .input--light:-ms-input-placeholder {
@@ -431,7 +433,7 @@ div.invalid {
 #policy-checkbox__control-error {
   border: none;
   padding-top: 1rem;
-  margin-top: 1rem; }
+  margin-top: 0.7rem; }
 
 #policy-checkbox__modal-error {
   border: none;
@@ -441,7 +443,7 @@ div.invalid {
 #policy-checkbox__footer-error {
   border: none;
   padding-top: 1rem;
-  margin-top: 1rem; }
+  margin-top: 0.7rem; }
 
 #user-name__footer-error {
   border: none; }
@@ -1631,7 +1633,31 @@ img {
 
 @media screen and (max-width: 1400px) {
   .goals__tabs {
-    width: 51.5rem; } }
+    width: 51.5rem; }
+  .label {
+    font-size: 1.07rem; }
+  --light {
+    color: #fff; }
+  .input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    font-size: 1.285rem;
+    color: #757575;
+    padding: 0.6rem 0; }
+    .input--light::-webkit-input-placeholder {
+      color: #fff; }
+    .input--light::-moz-placeholder {
+      color: #fff; }
+    .input--light:-ms-input-placeholder {
+      color: #fff; }
+    .input--light::-ms-input-placeholder {
+      color: #fff; }
+    .input--light::placeholder {
+      color: #fff; }
+    .input:focus {
+      outline: none;
+      border-bottom: 1px solid #E3B873; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -2166,6 +2192,15 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .control__text {
+    font-size: 1rem; }
+  .modal__button {
+    margin: auto; }
+  .input {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .label {
+    color: #757575; }
   .control {
     margin-top: 15rem; }
   .project__swiper {
@@ -2426,8 +2461,15 @@ img {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .modal__button {
+    margin: auto; }
+  .input {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .label {
+    color: #757575; }
   .control__text {
-    font-size: 1rem !important; }
+    font-size: 1rem; }
   .swiper-slide__text {
     flex-basis: 40%; }
   .top-arrow {
@@ -2770,6 +2812,13 @@ img {
     display: none; } }
 
 @media screen and (max-width: 320px) {
+  .modal__button {
+    margin: auto; }
+  .input {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .label {
+    color: #757575 !important; }
   .top-arrow {
     display: none; }
   .team__cards {
@@ -2867,6 +2916,11 @@ img {
     left: -33%; } }
 
 @media screen and (max-width: 991px) and (min-width: 577px) {
+  .input {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .label {
+    color: #757575; }
   .project__container {
     max-width: 60%; }
   .swiper-container {
