@@ -734,7 +734,8 @@ img {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.85rem;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-weight: 100; }
   .title--primary {
     color: #E3B873; }
 
@@ -800,6 +801,12 @@ img {
   margin-top: -4.3rem;
   max-width: 49.57rem;
   max-height: 34.42rem; }
+
+.section-title__heading {
+  font-weight: normal; }
+
+.section-title__heading--primary {
+  font-weight: normal; }
 
 .control {
   padding: 69px 0; }
@@ -1692,7 +1699,8 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873; }
+    border: 1px solid #E3B873;
+    box-shadov: none; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
