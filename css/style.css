@@ -478,6 +478,15 @@ div.invalid {
   margin: 0px 8px !important;
   padding: 5px; }
 
+.swiper-button-prev:focus {
+  outline: none; }
+
+.swiper-button-next:focus {
+  outline: none; }
+
+.swiper-slide-next {
+  opacity: 0; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -808,6 +817,9 @@ img {
 .section-title__heading--primary {
   font-weight: normal; }
 
+.swiper-slide__heading {
+  font-weight: normal; }
+
 .control {
   padding: 69px 0; }
   .control__section-title {
@@ -816,7 +828,8 @@ img {
   .control__heading {
     font-size: 1.45rem;
     color: #fff;
-    margin-bottom: 0.9rem; }
+    margin-bottom: 0.9rem;
+    font-weight: normal; }
   .control__video {
     position: relative;
     display: -webkit-box;
@@ -893,7 +906,8 @@ img {
   margin-bottom: 2.3rem; }
 
 .types-title__heading {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: normal; }
 
 .types__image {
   margin: 2rem auto; }
@@ -916,7 +930,8 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
@@ -1085,9 +1100,11 @@ img {
   .design-title__description {
     font-size: 1.42rem; }
   .design__heading {
-    font-size: 1.45rem; }
+    font-size: 1.45rem;
+    font-weight: normal; }
   .design__section-title {
-    margin-bottom: 2.78rem; }
+    margin-bottom: 2.78rem;
+    font-weight: normal; }
     .design__section-title__description {
       max-width: 740px; }
   .design__pricetag {
@@ -1113,7 +1130,6 @@ img {
 
 .section-title__preheading {
   font-family: 'Futura Book', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.07rem;
   line-height: 1.5rem;
@@ -1121,10 +1137,11 @@ img {
   color: #fff; }
 
 .swiper-slide__heading {
-  max-width: 18.7rem; }
+  max-width: 18.7rem;
+  line-height: 1.5; }
 
 .swiper-slide__picture {
-  max-width: 805px;
+  max-width: 700px;
   max-height: 421px; }
 
 .swiper-slide__number {
@@ -1137,7 +1154,8 @@ img {
   color: #fff; }
 
 .swiper-slide__value {
-  width: 24.07rem; }
+  width: 24.07rem;
+  line-height: 1.5; }
 
 .goals {
   padding-top: 35rem;
@@ -1192,7 +1210,6 @@ img {
   margin-top: -35rem; }
   .team-title__heading {
     font-family: 'Yeseva One',cursive;
-    font-style: normal;
     font-weight: normal;
     font-size: 1.428rem;
     line-height: 2rem;
@@ -1525,7 +1542,8 @@ img {
     line-height: 1.4;
     text-align: center;
     margin: 0;
-    margin-bottom: 1.94rem; }
+    margin-bottom: 1.94rem;
+    font-weight: normal; }
   .modal__form {
     display: -webkit-box;
     display: flex;
@@ -1647,7 +1665,9 @@ img {
   .control {
     margin-top: -25rem; }
   .control-title__image {
-    margin: 2rem auto; } }
+    margin: 2rem auto; }
+  .goals__tabs {
+    width: 49.5rem; } }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .nav {
@@ -1690,6 +1710,8 @@ img {
     margin-top: 5rem; } }
 
 @media screen and (max-width: 991px) {
+  .logo:hover {
+    color: #E3B873; }
   .top-arrow {
     display: none; }
   .footer__menu {
@@ -1701,6 +1723,8 @@ img {
     color: #fff;
     border: 1px solid #E3B873;
     box-shadov: none; }
+  .footer__icon:hover {
+    box-shadow: none; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
@@ -2026,7 +2050,9 @@ img {
   .customers {
     display: none; }
   .footer__wrap {
-    margin-top: -4rem; } }
+    margin-top: -4rem; }
+  .control__button {
+    margin-bottom: -4.3rem; } }
 
 .section-title {
   margin: 0 auto; }
@@ -2048,7 +2074,10 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873; }
+    border: 1px solid #E3B873;
+    box-shadow: none; }
+  .button:hover {
+    box-shadow: none; }
   .container {
     width: 90%; }
   .menu__logo {
@@ -2128,6 +2157,8 @@ img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
+  .logo:hover {
+    color: #E3B873; }
   .control__text {
     font-size: 1rem; }
   .modal__button {
@@ -2148,7 +2179,10 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873; }
+    border: 1px solid #E3B873;
+    box-shadow: none; }
+  .footer__icon:hover {
+    box-shadow: none; }
   .hero__content {
     max-width: 47.85rem;
     margin-left: 0rem; }
@@ -2394,9 +2428,13 @@ img {
   .footer__contact-phone {
     display: none; }
   .footer__menu {
-    display: none; } }
+    display: none; }
+  .control__button {
+    margin-bottom: -4.3rem; } }
 
 @media screen and (max-width: 576px) {
+  .logo:hover {
+    color: #E3B873; }
   .modal__button {
     margin: auto; }
   .input {
@@ -2741,13 +2779,22 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873; } }
+    border: 1px solid #E3B873;
+    box-shadow: none; }
+  .footer__icon:hover {
+    box-shadow: none; }
+  .control__button {
+    margin-bottom: -4.3rem; }
+  .swiper-slide__heading {
+    max-width: 8.7rem; } }
 
 @media screen and (max-height: 700px) {
   .hero__scroll-down {
     display: none; } }
 
 @media screen and (max-width: 320px) {
+  .control__button {
+    margin-bottom: -4.3rem; }
   .modal__button {
     margin: auto; }
   .input {
@@ -2771,9 +2818,14 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873; }
+    border: 1px solid #E3B873;
+    box-shadow: none; }
+  .footer__icon:hover {
+    box-shadow: none; }
   .advantages {
-    display: none; } }
+    display: none; }
+  .logo:hover {
+    color: #E3B873; } }
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
   .advantages__block--first {
@@ -2825,3 +2877,16 @@ img {
     margin-bottom: -8rem; }
   .control {
     margin-top: 15rem; } }
+
+@media screen and (max-height: 380px) {
+  .modal__dialog {
+    height: 400px;
+    overflow: auto; } }
+
+@media screen and (max-width: 500px) {
+  .col-50__project {
+    margin-top: -8rem; } }
+
+@media screen and (max-width: 375px) {
+  .col-50__project {
+    margin-top: 2rem; } }
