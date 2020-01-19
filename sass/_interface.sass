@@ -15,7 +15,6 @@
   &--primary
     background-color: $primary
     color: $light
-    box-shadow: 0px 5px 15px rgba($primary,0.2)
     transition: box-shadow 0.3s
     padding: 19px 25px
     &:hover
@@ -44,6 +43,8 @@
   font-size: 1.285rem
   color: $light
   padding: 0.6rem 0
+  &::placeholder
+    color: $dark
   &--light
     &::placeholder
       color: $light
@@ -141,5 +142,11 @@ div
 .swiper-slide-next
   opacity: 0
 
+#button__outline
+  &:hover
+    box-shadow: none
+    color: $light
+    background-color: transparent
+    border: 1px solid $light
 
   

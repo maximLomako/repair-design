@@ -66,13 +66,13 @@
               стоимости материалов за счет
               организации работы</p>
             <button class="button hero__button button--primary wow fadeInLeft" data-toggle="modal" data-wow-delay="0.5s">Рассчитать стоимость</button>
-            <button class="button hero__button button--outline wow fadeInLeft" data-wow-delay="0.5s"
+            <button class="button hero__button button--outline wow fadeInLeft" id="button__outline" data-wow-delay="0.5s"
               data-toggle="modal">Отправить заявку</button>
           </div>
           <!-- /.hero__content-->
         </div>
           <!-- /.container -->
-        <a href="#" class="hero__scroll-down wow bounce pulse" data-wow-iteration="3">Листайте вниз</a>
+        <a href="#projects" class="hero__scroll-down wow bounce pulse" data-wow-iteration="3">Листайте вниз</a>
       </section>
       <!-- /.hero -->
       <section id="projects" class="section section--dark projects">
@@ -216,12 +216,13 @@
           заявку ниже чтобы получить ссылку на трансляцию.</p>
           <form action="send.php" class="form control__form">
             <div class=" control__input-group">
-              <label for="user-name__control" class="label form__label control__label">Имя</label>
+              <label for="user-name__control" class="label form__label control__label" style="color: grey">Имя</label>
               <input type="text" name="userName" autocomplete="off" class="input form__input control__input" id="user-name__control" placeholder="Как вас зовут:">
             </div>
             <!-- /.label form__label -->
             <div class=" control__input-group">
-              <label for="user-phone__control" class="label form__label control__label">Телефон</label>
+              <label for="user-phone__control" class="label form__label control__label"
+                style="color: grey">Телефон</label>
               <input type="tel" name="userPhone" autocomplete="off" class="input form__input control__input" id="user-phone__control" placeholder="Ваш номер телефона:">
             </div>
 
@@ -412,7 +413,7 @@
               <div class="section-title section-title--left">
                 <span class="section-title__preheading">как мы работаем</span>
                 <h2 class="section-title__heading  section-title__heading--primary">6 Шагов
-                  <span class="section-title__word">до цели</span></h2>
+                  <span class="section-title__word goals-title__word">до цели</span></h2>
               </div>
               <!-- Slider main container -->
               <div class="swiper-container goal__swiper">
@@ -420,7 +421,7 @@
                 <div class="swiper-wrapper swiper-wrapper-bottom swiper-no-swiping">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <div class="swiper-slide__text">
+                    <div class="swiper-slide__text goal_slide__text">
                       <span class="swiper-slide__number">1/6</span>
                       <h3 class="swiper-slide__heading">Выезд на замеры помещения</h3>
                       <p class="swiper-slide__value goals__value">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить
@@ -769,7 +770,9 @@
             
             <div class="policy footer__policy">
               <input type="checkbox" name="policy-checkbox__footer" id="policy-checkbox__footer" class="policy__checkbox" checked>
-              <label for="policy-checkbox__footer" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
+              <label for="policy-checkbox__footer" class="policy__label footer__policy__label policy__label--center">Я
+                соглашаюсь
+                с обработкой данных</label>
             </div>
               <!-- /.policy -->
             <button class="button button--primary footer__button">Отправить</button>
@@ -848,7 +851,7 @@
          
            <div class="policy modal__policy">
              <input type="checkbox" name="policy-checkbox__modal" id="policy-checkbox__modal" class="policy__checkbox" checked>
-             <label for="policy-checkbox__modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
+             <label for="policy-checkbox__modal" class="policy__label modal__policy__label">Я соглашаюсь с обработкой данных</label>
            </div>
            <!-- /.policy -->
            <button class="button button--primary modal__button" id="submit-form">Отправить заявку</button>

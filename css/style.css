@@ -335,7 +335,6 @@ template {
   .button--primary {
     background-color: #E3B873;
     color: #fff;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     -webkit-transition: box-shadow 0.3s;
     transition: box-shadow 0.3s;
     padding: 19px 25px; }
@@ -367,6 +366,16 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.6rem 0; }
+  .input::-webkit-input-placeholder {
+    color: #131313; }
+  .input::-moz-placeholder {
+    color: #131313; }
+  .input:-ms-input-placeholder {
+    color: #131313; }
+  .input::-ms-input-placeholder {
+    color: #131313; }
+  .input::placeholder {
+    color: #131313; }
   .input--light::-webkit-input-placeholder {
     color: #fff; }
   .input--light::-moz-placeholder {
@@ -486,6 +495,12 @@ div.invalid {
 
 .swiper-slide-next {
   opacity: 0; }
+
+#button__outline:hover {
+  box-shadow: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff; }
 
 .container {
   width: 85%;
@@ -721,7 +736,6 @@ img {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    line-height: 0.8;
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
@@ -734,8 +748,6 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
-    .instagram__link:hover {
-      color: #fff; }
 
 .title {
   max-width: 33rem;
@@ -1158,7 +1170,7 @@ img {
   line-height: 1.5; }
 
 .goals {
-  padding-top: 35rem;
+  padding-top: 32rem;
   padding-bottom: 25rem;
   margin-top: -35rem; }
   .goals__tabs {
@@ -1170,7 +1182,8 @@ img {
     width: 58.5rem;
     list-style-type: none;
     cursor: pointer;
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 7rem; }
     .goals__tabs-item {
       display: -webkit-box;
       display: flex;
@@ -1192,12 +1205,18 @@ img {
       text-transform: uppercase;
       border-bottom: 2px solid #7B6536;
       margin-bottom: 1rem; }
-    .goals__tabs-text {
-      font-family: 'Futura book', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.07rem;
-      line-height: 1.285rem; }
+  .goals-title__word::after {
+    content: "";
+    margin-left: 7rem; }
+  .goals-title__word-text {
+    font-family: 'Futura book', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.285rem; }
+
+.goal_slide__text {
+  margin-top: 5rem; }
 
 .active {
   color: #fff; }
@@ -1663,7 +1682,7 @@ img {
     margin-left: 0 !important;
     max-width: 27.07rem !important; }
   .control {
-    margin-top: -25rem; }
+    margin-top: -29rem; }
   .control-title__image {
     margin: 2rem auto; }
   .goals__tabs {
@@ -1721,8 +1740,7 @@ img {
   .button:hover {
     background-color: #E3B873;
     color: #fff;
-    border: 1px solid #E3B873;
-    box-shadov: none; }
+    border: 1px solid #E3B873; }
   .footer__icon:hover {
     box-shadow: none; }
   .hero__content {
@@ -2202,7 +2220,7 @@ img {
   .contacts__phone {
     font-size: 1rem; }
   .hero {
-    min-height: 750px; }
+    min-height: 595px; }
     .hero__title {
       margin-top: 1rem;
       margin-bottom: 1rem;
@@ -2788,10 +2806,9 @@ img {
   .swiper-slide__heading {
     max-width: 8.7rem; } }
 
-@media screen and (max-height: 700px) {
-  .hero__scroll-down {
-    display: none; } }
-
+/*@media screen and ( max-height: 700px )
+  .hero__scroll-down
+    display: none */
 @media screen and (max-width: 320px) {
   .control__button {
     margin-bottom: -4.3rem; }
@@ -2890,3 +2907,50 @@ img {
 @media screen and (max-width: 375px) {
   .col-50__project {
     margin-top: 2rem; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .section-title__word {
+    position: relative;
+    -webkit-box-pack: start;
+    justify-content: flex-start; }
+    .section-title__word::after {
+      position: absolute;
+      top: 45%; }
+  .video__play {
+    margin-top: 10rem; }
+  .section-title__image {
+    position: relative; }
+    .section-title__image::before {
+      position: absolute;
+      left: 43%; }
+    .section-title__image::after {
+      position: absolute;
+      left: 53%; }
+  .instagram__link {
+    position: relative; }
+    .instagram__link::after {
+      position: absolute;
+      top: 45%; }
+  .hero__scroll-down {
+    position: relative;
+    margin-top: 6rem;
+    margin-left: -68rem;
+    padding-top: 2rem; }
+    .hero__scroll-down::after {
+      position: absolute; }
+  .modal__policy {
+    position: relative;
+    margin-left: 2rem; }
+  .policy__label::before {
+    position: absolute;
+    left: -8%; }
+  .control__policy {
+    position: relative; }
+  .control__policy-label::before {
+    position: absolute;
+    left: 31%; }
+  .footer__policy {
+    position: relative; }
+  .footer__policy__label::before {
+    position: absolute;
+    left: 21%; } }

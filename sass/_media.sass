@@ -43,7 +43,7 @@
     margin-left: 0 !important
     max-width: 27.07rem !important
   .control
-    margin-top: -25rem
+    margin-top: -29rem
   .control-title__image
     margin: 2rem auto
   .goals__tabs 
@@ -102,7 +102,7 @@
       background-color: $primary
       color: $light
       border: 1px solid $primary
-      box-shadov: none
+      
   .footer__icon
     &:hover
       box-shadow: none
@@ -618,7 +618,7 @@
     &__phone
       font-size: 1rem
   .hero
-    min-height: 750px
+    min-height: 595px
     &__title
       margin-top: 1rem
       margin-bottom: 1rem
@@ -1232,7 +1232,7 @@
     margin-bottom: -4.3rem
   .swiper-slide__heading
     max-width: 8.7rem
-@media screen and ( max-height: 700px )
+/*@media screen and ( max-height: 700px )
   .hero__scroll-down
     display: none
 
@@ -1333,3 +1333,52 @@
 @media screen and ( max-width: 375px )
   .col-50__project
     margin-top: 2rem
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .section-title__word
+    position: relative
+    justify-content: flex-start
+    &::after
+      position: absolute
+      top: 45%
+  .video__play
+    margin-top: 10rem
+  .section-title__image
+    position: relative
+    &::before
+      position: absolute
+      left: 43%
+    &::after
+      position: absolute
+      left: 53%
+  .instagram__link
+    position: relative
+    &::after
+      position: absolute
+      top: 45%
+  .hero__scroll-down
+    position: relative
+    margin-top: 6rem
+    margin-left: -68rem
+    padding-top: 2rem
+    &::after
+      position: absolute
+  .modal__policy
+    position: relative
+    margin-left: 2rem
+  .policy__label
+    &::before
+      position: absolute
+      left: -8%
+  .control__policy
+    position: relative
+  .control__policy-label
+    &::before
+      position: absolute
+      left: 31%
+  .footer__policy
+    position: relative
+  .footer__policy__label
+    &::before
+      position: absolute
+      left: 21%
+      
